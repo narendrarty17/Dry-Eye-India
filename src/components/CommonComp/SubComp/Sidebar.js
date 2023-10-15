@@ -66,7 +66,10 @@ const Sidebar = (props) => {
               alt=""
               src="/images/Header/sideBar/selfDiagnosis.svg"
             />
-            <div className={styles.label}>Self Diagnosis</div>
+            <div
+              className={styles.label}
+              onClick={() => navigate('/blogpost')}
+            >Blogs</div>
           </div>
           <div className={styles.dropdown}>
             <div className={styles.linkHighlighted}>

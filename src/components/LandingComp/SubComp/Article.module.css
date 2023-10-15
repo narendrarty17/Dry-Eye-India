@@ -7,12 +7,9 @@
   text-align: left;
   font-family: Mulish;
 }
-.article01ImgFrame,
-.article01ImgIcon {
+.articleImg {
   width: 100%;
   height: auto;
-}
-.article01ImgIcon {
   object-fit: cover;
 }
 .headerAndTxtContainer {
@@ -52,10 +49,6 @@
   mix-blend-mode: normal;
 }
 @media (max-width: 720px) {
-  .article {
-    width: 265px;
-    height: 420px;
-  }
   .headerAndTxtContainer {
     height: 180px;
   }

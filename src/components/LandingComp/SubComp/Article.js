@@ -6,7 +6,7 @@ const Article = ({ articleImg, articleTitle, articleContent }) => {
   return (
     <div className={styles.article}>
       <img
-        className={styles.article01ImgIcon}
+        className={styles.articleImg}
         alt=""
         src={articleImg}
       />

@@ -14,11 +14,6 @@ const cardsData = [
         'cardImg': '/images/LandingPage/servicesIcons/SelfDiagnosis.svg'
     },
     {
-        'cardName': 'Tracking',
-        'cardContent': 'Track your dry eye recovery by answering few simple questions.',
-        'cardImg': '/images/LandingPage/servicesIcons/Tracking.svg'
-    },
-    {
         'cardName': 'Our Products',
         'cardContent': 'Our products are uniquely designed for Indian Dry Eye Patients',
         'cardImg': '/images/LandingPage/servicesIcons/EmergencyCare.svg'
