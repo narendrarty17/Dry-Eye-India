@@ -1,0 +1,186 @@
+.consultContainer {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+.main {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.login {
+  width: 320px;
+  height: auto;
+  font-size: 0.8rem;
+  color: var(--black-2-5);
+  font-family: var(--font-mulish);
+}
+
+/* Above login form text */
+.aboveLoginTxt {
+  margin-bottom: 20px;
+}
+.dontHaveAcc,
+.welcomeBack,
+.rememberMe {
+  letter-spacing: 0.1em;
+}
+.welcomeBack {
+  font-size: 1.1rem;
+  font-family: var(--font-poppins);
+  line-height: 2rem;
+}
+.signUp {
+  color: var(--blue-2-7);
+}
+
+/* Login form */
+.usernameAndPasswordContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.username,
+.password {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.usernameLabel,
+.passwordLabel {
+  letter-spacing: 0.1em;
+  font-weight: 600;
+}
+.usernameInput,
+.passwordInput {
+  border: 2px solid var(--dark-blue-1-8);
+  font-family: var(--font-nunito);
+  background-color: var(--white);
+  border-radius: var(--br-61xl);
+  display: flex;
+  justify-content: flex-start;
+  padding: 8px 8px;
+}
+.rememberAndForgotContainer {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.rememberMeWrapper,
+.forgotPasswordWrapper {
+  align-self: stretch;
+  width: 190px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+}
+.rememberMeIcon {
+  width: 24px;
+  height: 24px;
+}
+.forgetPassword {
+  color: #8e9fdc;
+}
+
+/* Signin button */
+.signIn {
+  width: 100%;
+  margin-top: 10px;
+  letter-spacing: 0.1em;
+  font-weight: 800;
+  font-family: var(--font-poppins);
+  color: var(--white);
+  display: block;
+  text-align: center;
+  cursor: pointer;
+  border: 0;
+  padding: 8px 8px;
+  background-color: var(--color-dodgerblue-100);
+  border-radius: var(--br-61xl);
+  box-shadow: 0 4px 12px rgba(200, 211, 249, 0.6) inset,
+    4px 8px 12px rgba(78, 99, 141, 0.06);
+}
+
+/* Below Signin button content */
+.socialTitle {
+  margin-top: 25px;
+  position: relative;
+  width: 320px;
+  height: 44px;
+  font-size: 0.9rem;
+}
+.socialTitleChild {
+  width: 320px;
+  height: 2px;
+}
+.orContinueWithWrapper {
+  position: absolute;
+  left: 60px;
+  top: -3px;
+  background-color: var(--white);
+  width: 192px;
+  padding: var(--padding-5xs);
+  box-sizing: border-box;
+  letter-spacing: 0.1rem;
+}
+.frameItem {
+  width: 40px;
+  height: 40px;
+}
+.socialLogin {
+  width: 320px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.socialLoginInner {
+  border-radius: var(--br-5xs);
+  background-color: var(--white);
+  border: 2px solid var(--dark-blue-1-8);
+  box-sizing: border-box;
+  width: 75px;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.opthomogistConsultation1Icon {
+  width: 493.5px;
+  height: 377.25px;
+  object-fit: cover;
+}
+@media (max-width: 900px) {
+  .opthomogistConsultation1Icon {
+    width: 394.8px;
+    height: 301.8px;
+  }
+}
+
+@media (max-width: 800px) {
+  .opthomogistConsultation1Icon {
+    width: 329px;
+    height: 251.5px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main {
+    justify-content: center;
+    margin-left: 0;
+    margin-top: 40px;
+    margin-bottom: 250px;
+  }
+  .opthomogistConsultation1Icon {
+    display: none;
+  }
+}

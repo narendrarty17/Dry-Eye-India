@@ -1,0 +1,28 @@
+.mainHeader {
+  display: none;
+}
+/* blog container */
+.blogPost {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--font-size-3xl);
+  color: var(--color-dimgray);
+  font-family: var(--font-october-devanagari);
+}
+.sectionsSeperator {
+  border-right: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 1px;
+  height: 500px;
+}
+
+@media (max-width: 600px) {
+  .mainHeader {
+    display: block;
+  }
+}

@@ -1,0 +1,59 @@
+.cover {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: Mulish;
+  margin: 20px 0;
+}
+.coverContent {
+  max-width: 260px;
+}
+.headerTxt {
+  font-family: var(--font-poppins);
+}
+.coverTxt {
+  font-size: 1rem;
+  color: #7d7987;
+  line-height: 24px;
+}
+.buttonContainer {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.coverPicIcon {
+  width: 360px;
+  height: auto;
+}
+.consultbtn {
+  border-radius: 55px;
+  width: 140px;
+  height: 35px;
+  background-color: #458ff6;
+  border: 0;
+  color: white;
+  margin-top: 15px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+@media (max-width: 720px) {
+  .cover {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    gap: 30px;
+    justify-items: center;
+  }
+  .coverPicIcon {
+    width: 290px;
+    height: auto;
+  }
+  .buttonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .headerTxt {
+    text-align: center;
+  }
+}

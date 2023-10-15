@@ -1,0 +1,51 @@
+.ourservices {
+  margin-top: 80px;
+  font-size: var(--font-size-lg);
+  font-family: Mulish;
+}
+
+/* Header Section */
+.servicesheader {
+  width: 80%;
+  text-align: center;
+  margin: auto;
+}
+.headerTxt {
+  font-family: var(--font-poppins);
+  font-size: 1.35rem;
+  color: black;
+}
+.servicesTxt {
+  color: #7d7987;
+  font-size: 1rem;
+  line-height: 24px;
+}
+
+.frameIcon {
+  width: 764.54px;
+  height: 967.94px;
+  overflow: hidden;
+  opacity: 0.6;
+}
+
+/* Card Section */
+.cardsSection {
+  background-image: url("../../../public/images/LandingPage/servicesIcons/backgroundImg.svg");
+  background-size: 500px auto;
+  margin-top: 20px;
+  justify-items: center;
+  gap: 20px;
+}
+.cardsRow {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.buttonContainer {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+}

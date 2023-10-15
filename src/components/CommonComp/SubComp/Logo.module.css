@@ -1,0 +1,32 @@
+/* logo */
+.logo {
+  display: inline-block;
+  position: relative;
+  width: 250px;
+  height: 41px;
+  font-family: var(--font-poppins);
+  font-size: 1.2rem;
+}
+.logoimg {
+  position: relative;
+  height: 41px;
+  width: 41px;
+}
+.logoimgChild {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  background-color: #458ff6;
+}
+.d {
+  display: inline-block;
+  position: absolute;
+  left: 14px;
+  top: 7px;
+  color: white;
+}
+.logotxt {
+  position: absolute;
+  top: 28%;
+  left: 20%;
+}

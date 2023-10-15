@@ -1,0 +1,191 @@
+/* Sidebar Section */
+.sidebar {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  color: var(--color-gray-300);
+  width: 25%;
+}
+
+/* Get started and Sign in button */
+.sidebarbtns {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 1rem;
+  color: var(--color-cornflowerblue-200);
+  width: 95%;
+}
+.signIn,
+.getstartedbtn {
+  letter-spacing: 2px;
+  text-transform: capitalize;
+}
+.getstartedbtn {
+  border-radius: var(--br-81xl);
+  background-color: var(--color-gray-300);
+  color: white;
+  padding: 8px 14px;
+}
+/* Searchbar */
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 0.8rem;
+  gap: 0.1rem;
+  width: 95%;
+  height: 28px;
+  color: #929292;
+  border: 0;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+}
+.searchIcon {
+  width: 16px;
+  height: 16px;
+  overflow: hidden;
+}
+.search {
+  letter-spacing: 1px;
+  line-height: 25px;
+  display: inline-block;
+  width: 56px;
+  height: 25px;
+}
+
+/* Sidebar author description */
+.sidebarauthordesc {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 6px;
+  color: var(--color-gray-200);
+  width: 95%;
+  font-size: 1rem;
+}
+.sidebarauthorlogo {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.authorimgIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.mariaLawrence {
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--color-gray-300);
+}
+.kFollowers {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+}
+.sidebarauthorbtn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--white);
+}
+.sendbtnIcon {
+  width: 32px;
+  height: 32px;
+}
+.followbtn {
+  border-radius: var(--br-81xl);
+  background-color: var(--color-cornflowerblue-200);
+  padding: 6px 16px;
+}
+.follow {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.sidebarauthorcontent {
+  font-size: 0.8rem;
+  letter-spacing: 1px;
+  line-height: 1.2rem;
+  display: inline-block;
+  width: 95%;
+}
+
+/* Suggested reads */
+.suggestedreads {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  width: 95%;
+}
+.suggestedReadsHeading {
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+  font-family: var(--font-nunito-sans);
+}
+.suggestedreadcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.suggestedread {
+  display: flex;
+  gap: 8px;
+}
+.suggestedreadcontent {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.suggestedreadicon {
+  border-radius: var(--br-xs);
+  width: 70px;
+  height: 70px;
+  object-fit: cover;
+}
+.suggestedreadauthordetails {
+  display: flex;
+  gap: 7px;
+  align-items: center;
+}
+.suggestedreadauthoricon {
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.suggestedreadauthor {
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: #151515;
+}
+.suggestedreadtitle {
+  font-size: 0.8rem;
+  line-height: 120%;
+  font-weight: 500;
+  display: inline-block;
+  letter-spacing: 1px;
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
+@media (max-width: 900px) {
+  .getstartedbtn {
+    display: none;
+  }
+  .signIn {
+    border-radius: var(--br-81xl);
+    background-color: var(--color-gray-300);
+    color: white;
+    padding: 8px 14px;
+  }
+}

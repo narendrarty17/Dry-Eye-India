@@ -1,0 +1,37 @@
+.articlesContainer {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  margin-top: 100px;
+  color: var(--color-black);
+  font-family: Mulish;
+}
+.headerTxt {
+  font-family: var(--font-poppins);
+  font-size: 1.35rem;
+  color: black;
+}
+.underline {
+  margin-top: 30px;
+}
+.articles {
+  margin-top: 20px;
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.viewallbtn {
+  margin-top: 30px;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
+  width: 133px;
+  height: 40px;
+  border-radius: 55px;
+  border: 1.4px solid #458ff6;
+  font-size: 1.1rem;
+  font-family: var(--font-poppins);
+  color: #458ff6;
+}

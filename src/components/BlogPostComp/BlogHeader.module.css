@@ -1,0 +1,99 @@
+/* Blog Header */
+.blogheader {
+  width: 95%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+  font-size: var(--text-sm-medium-size);
+  color: var(--color-cornflowerblue-200);
+}
+
+/* Header Left */
+.headerLeft {
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.authorImgBlogHeader {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  object-fit: cover;
+}
+.authorDetailsHeader {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  font-size: 0.6rem;
+  color: var(--color-darkgray);
+}
+.authorName {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  font-size: 0.7rem;
+  font-weight: 500;
+  color: var(--color-gray-300);
+}
+.dateReadListen {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.date {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+.minRead {
+  letter-spacing: 1px;
+}
+.fullStop {
+  letter-spacing: 1px;
+  font-weight: 800;
+}
+.play {
+  margin-left: 8px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+.playbtnIcon {
+  width: 20px;
+  height: 20px;
+}
+.listen {
+  letter-spacing: 1px;
+  text-transform: capitalize;
+}
+
+/* Social media icons in header */
+.headersociallogo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.3rem;
+}
+.linkedinIcon,
+.bookmark {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.line {
+  border-right: 1px solid var(--color-gainsboro);
+  box-sizing: border-box;
+  width: 1px;
+  height: 24px;
+}
+
+@media (max-width: 580px) {
+  .headersociallogo {
+    display: none;
+  }
+}
