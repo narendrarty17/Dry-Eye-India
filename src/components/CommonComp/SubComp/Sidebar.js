@@ -61,17 +61,6 @@ const Sidebar = (props) => {
               className={styles.linkLabel}
             >Self Diagnosis</div>
           </div>
-          <div
-            className={styles.link}
-            onClick={() => navigate('/consult')}
-          >
-            <img
-              className={styles.linkIcon}
-              alt=""
-              src="/images/Header/sideBar/findDoc.svg"
-            />
-            <div className={styles.label}>Find a doctor</div>
-          </div>
           <div className={styles.link}>
             <img
               className={styles.linkIcon}
@@ -82,6 +71,17 @@ const Sidebar = (props) => {
               className={styles.label}
               onClick={() => navigate('/blogpost')}
             >Blogs</div>
+          </div>
+          <div
+            className={styles.link}
+            onClick={() => navigate('/consult')}
+          >
+            <img
+              className={styles.linkIcon}
+              alt=""
+              src="/images/Header/sideBar/findDoc.svg"
+            />
+            <div className={styles.label}>Find a doctor</div>
           </div>
           <div className={styles.dropdown}>
             <div className={styles.linkHighlighted}>
