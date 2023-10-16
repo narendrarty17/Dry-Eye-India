@@ -106,9 +106,6 @@ const Sidebar = (props) => {
               <div className={styles.containerLink}>
                 <div className={styles.containerLinkLabel}>Manuka Honey Gel/Drop</div>
               </div>
-              <div className={styles.containerLink}>
-                <div className={styles.containerLinkLabel}>Seleniex</div>
-              </div>
             </div>
           </div>
         </div>
