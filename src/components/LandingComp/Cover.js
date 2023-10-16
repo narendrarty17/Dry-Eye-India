@@ -8,14 +8,18 @@ const Cover = () => {
             <div className={styles.coverContent}>
                 <h1 className={styles.headerTxt}>Your Partner in Dry Eye Recovery</h1>
                 <p className={styles.coverTxt}>
-                    Our Mission is to direct dry eye patients in right treatment plan to lead a happy and productive life. To talk with Dry Eye Expert click on “Consult today”.
+                    Our Mission is to direct dry eye patients
+                    in right treatment plan to lead a happy and
+                    productive life. Join our ever growing community in facebook.
                 </p>
                 <div className={styles.buttonContainer}>
                     <button
                         className={styles.consultbtn}
-                        onClick={() => navigate('/consult')}
                     >
-                        Consult today
+                        <a
+                            className={styles.joinus}
+                            href="https://www.facebook.com/groups/228053842950424/?mibextid=oMANbw"
+                        >Join Us</a>
                     </button>
                 </div>
             </div>
