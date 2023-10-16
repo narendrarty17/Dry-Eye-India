@@ -1,0 +1,41 @@
+.container {
+  border-radius: 40px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 31px;
+  color: var(--white);
+  font-family: var(--font-sofia-sans);
+  padding-top: 350px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 667px;
+  object-fit: cover;
+  background-image: linear-gradient(
+      180deg,
+      rgba(11, 108, 255, 0) 30%,
+      rgba(11, 108, 255, 0.63) 40%,
+      #0b6cff 50%
+    ),
+    url("/public/images/SelfDiagnosis/IntroPg/coverImg.png");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.text {
+  margin-top: 5px;
+  font-size: 31px;
+}
+.letsContinue {
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 15px 17px rgba(0, 0, 0, 0.25);
+  width: 330px;
+  height: 60px;
+  mix-blend-mode: normal;
+  cursor: pointer;
+  font-size: 24px;
+  font-weight: 500;
+  color: #0b6cff;
+}

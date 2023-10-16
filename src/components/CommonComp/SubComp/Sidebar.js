@@ -51,6 +51,18 @@ const Sidebar = (props) => {
           </div>
           <div
             className={styles.link}
+            onClick={() => navigate('/diagnosis')}
+          >
+            <img
+              className={styles.linkIcon}
+              src="/images/Header/sideBar/home.svg"
+            />
+            <div
+              className={styles.linkLabel}
+            >Self Diagnosis</div>
+          </div>
+          <div
+            className={styles.link}
             onClick={() => navigate('/consult')}
           >
             <img
