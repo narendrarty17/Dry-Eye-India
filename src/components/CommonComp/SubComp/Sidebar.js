@@ -27,7 +27,10 @@ const Sidebar = (props) => {
               Main
             </div>
           </ div>
-          <div className={styles.link}>
+          <div
+            className={styles.link}
+            onClick={() => navigate('/')}
+          >
             <img
               className={styles.linkIcon}
               src="/images/Header/sideBar/home.svg"
