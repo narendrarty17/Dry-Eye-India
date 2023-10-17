@@ -9,7 +9,7 @@ const Splash = () => {
   return (
     <div className={styles.container}>
       <div>
-        <img alt="" src="/group-1.svg" />
+        <img alt="" src="/images/SelfDiagnosis/LetsStart/logo.svg" />
         <div className={styles.text}>Dry Eye <br /> Questionnaire</div>
       </div>
       <button className={styles.letsContinue}>

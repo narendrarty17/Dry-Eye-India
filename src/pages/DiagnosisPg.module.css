@@ -15,7 +15,7 @@
       rgba(11, 108, 255, 0.63) 40%,
       #0b6cff 50%
     ),
-    url("/public/images/SelfDiagnosis/IntroPg/coverImg.png");
+    url("/public/images/SelfDiagnosis/LetsStart/coverImg.png");
   display: flex;
   flex-direction: column;
   align-items: center;
