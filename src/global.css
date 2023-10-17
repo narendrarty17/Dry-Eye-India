@@ -26,6 +26,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap");
 
 /* Footer Mobile */
 
@@ -268,4 +269,48 @@ body {
 
   /* Effects */
   --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+  /* Questions Pg global css */
+  /* fonts */
+  --body-medium: Inter;
+
+  /* font sizes */
+  --body-medium-size: 15px;
+  --small-semibold-size: 12px;
+  --t2-semibold-size: 16px;
+  --mini-medium-size: 10px;
+
+  /* Colors */
+  --grey-1000: #1f2429;
+  --color-gray-100: rgba(31, 36, 41, 0.7);
+  --color-gray-200: rgba(31, 36, 41, 0.6);
+  --color-gray-300: rgba(31, 36, 41, 0.2);
+  --color-gray-400: rgba(31, 36, 41, 0.05);
+  --white-white: #fff;
+  --color-slategray: #5a6a77;
+  --cyan-300: #8ce0ff;
+  --mustard-50: #fffcf6;
+
+  /* Gaps */
+  --gap-xl: 20px;
+  --gap-5xs: 8px;
+  --gap-3xs: 10px;
+  --gap-9xs: 4px;
+  --gap-xs: 12px;
+
+  /* Paddings */
+  --padding-3xs: 10px;
+  --padding-9xs: 4px;
+  --padding-xl: 20px;
+  --padding-7xs: 6px;
+  --padding-5xs: 8px;
+  --padding-xs: 12px;
+
+  /* Border radiuses */
+  --br-99981xl: 100000px;
+  --br-11xl: 30px;
+  --br-81xl: 100px;
+  --br-8xs: 5px;
+  --br-5xs: 8px;
+  --br-5xl: 24px;
 }

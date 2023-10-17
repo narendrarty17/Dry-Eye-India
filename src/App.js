@@ -9,6 +9,7 @@ import ConsultToday from "./pages/ConsultToday";
 import { useEffect } from "react";
 import BlogPost from "./pages/BlogPost";
 import DiagnosisPg from './pages/DiagnosisPg';
+import Questions from "./pages/Questions";
 
 function App() {
   const action = useNavigationType();
@@ -56,6 +57,7 @@ function App() {
       <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
+      <Route path="/questions" element={<Questions />} />
     </Routes>
   );
 }
