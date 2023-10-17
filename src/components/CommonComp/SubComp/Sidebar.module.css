@@ -6,6 +6,7 @@
   box-shadow: 10px 40px 50px #e5e9f6;
   height: 800px;
   overflow: scroll;
+  z-index: 1;
 }
 .sidebarOpen {
   display: flex;
