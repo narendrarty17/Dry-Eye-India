@@ -4,7 +4,10 @@ const RiskAssessment = () => {
   return (
     <div className={styles.result}>
       <div className={styles.topHeader}>
-        <img className={styles.vectorIcon} alt="" src="/vector.svg" />
+        <img
+          className={styles.vectorIcon}
+          alt="" src="/images/SelfDiagnosis/Result/backArrow.svg"
+        />
         <h3>Results</h3>
       </div>
       <div className={styles.executiveSummary}>
@@ -17,7 +20,7 @@ const RiskAssessment = () => {
       <div className={styles.stats}>
         <div className={styles.statsHeader}>Your lung cancer risk: 0.4 %</div>
         <div className={styles.mainContentStats}>
-          <img className={styles.statPieIcon} alt="" src="/figpie.svg" />
+          <img className={styles.statPieIcon} alt="" src="/images/SelfDiagnosis/Result/pieChart.svg" />
           <div className={styles.bulletPoints}>
             <div className={styles.bullet}>
               <div className={styles.bulletPoint} />0.4%
