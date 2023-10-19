@@ -6,7 +6,7 @@ import styles from './Questions.module.css';
 
 const Questions = () => {
     return (
-        <div>
+        <div className={styles.questionsCardContainer}>
             <Header />
             <QuestionCard />
             <Footer />
