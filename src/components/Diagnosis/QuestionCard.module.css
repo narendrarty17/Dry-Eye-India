@@ -1,6 +1,7 @@
 /* Outermost container starts */
 .container {
   width: 100%;
+  height: 90vh;
 }
 .questioncard {
   margin-left: auto;
