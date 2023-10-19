@@ -1,6 +1,9 @@
 /* Outermost container starts */
+.container {
+  padding: 20px;
+  width: 100%;
+}
 .questioncard {
-  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-radius: var(--br-5xl);
@@ -61,7 +64,7 @@
 .usermetadata {
   font-size: var(--mini-medium-size);
   line-height: 12px;
-  color: var(--color-gray-100);
+  color: #4a6c7c;
 }
 .btncloseIcon {
   width: 32px;
@@ -87,7 +90,7 @@
   flex: 1;
   position: relative;
   border-radius: var(--br-81xl);
-  background-color: var(--color-gray-300);
+  background-color: #76bad4;
   height: 3px;
 }
 /* Header ends */
@@ -117,8 +120,8 @@
 
 .multipleChoiceQuestion {
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-400);
-  border: 1px solid var(--color-gray-300);
+  background-color: #87d7f4;
+  border: 1px solid #6196ab;
   box-sizing: border-box;
   width: 300px;
   display: flex;
@@ -134,8 +137,8 @@
 }
 .multipleChoiceOtherChoice {
   border-radius: var(--br-5xs);
-  background-color: var(--color-gray-400);
-  border: 1px solid var(--color-gray-300);
+  background-color: #87d7f4;
+  border: 1px solid #6196ab;
   box-sizing: border-box;
   width: 300px;
   display: flex;

@@ -10,6 +10,7 @@ import { useEffect } from "react";
 import BlogPost from "./pages/BlogPost";
 import DiagnosisPg from './pages/DiagnosisPg';
 import Questions from "./pages/Questions";
+import Results from "./pages/Results";
 
 function App() {
   const action = useNavigationType();
@@ -58,6 +59,7 @@ function App() {
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
       <Route path="/questions" element={<Questions />} />
+      <Route path="/results" element={<Results />} />
     </Routes>
   );
 }
