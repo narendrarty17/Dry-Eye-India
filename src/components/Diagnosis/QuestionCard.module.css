@@ -1,7 +1,8 @@
 /* Outermost container starts */
 .container {
+  display: flex;
+  align-items: center;
   width: 100%;
-  height: 90vh;
 }
 .questioncard {
   margin-left: auto;
@@ -206,3 +207,10 @@
   align-items: center;
 }
 /* Footer ends */
+
+@media (max-width: 600px) {
+  .container {
+    margin-top: 80px;
+    margin-bottom: 200px;
+  }
+}
