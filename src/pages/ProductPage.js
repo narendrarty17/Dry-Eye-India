@@ -94,7 +94,7 @@ const ProductPage = () => {
       <div className={styles.priceButton}>
         <div className={styles.totalPrice}>
           <div className={styles.totalPriceTxt}>TOTAL PRICE</div>
-          <div className={styles.totalPriceNumber}>$690.00</div>
+          <div className={styles.totalPriceNumber}><b>$690.00</b></div>
         </div>
         <div className={styles.addToCartBtn}>
           <div className={styles.addToCartText}>ADD TO CARD</div>
