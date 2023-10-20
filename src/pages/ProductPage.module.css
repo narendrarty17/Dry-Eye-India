@@ -1,0 +1,402 @@
+/* Container for product starts here */
+.productPage {
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  height: 852px;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--productive-helper-text-01-size);
+  color: var(--text-text-primary);
+  font-family: var(--productive-helper-text-01);
+  display: flex;
+  flex-direction: column;
+}
+/* Container for product ends here */
+
+/* CSS for IMG part starts */
+.productImages {
+  width: 100%;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-17xl);
+  overflow: hidden;
+}
+.productImg {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+}
+.backbtnIcon {
+  position: absolute;
+  overflow: hidden;
+  top: 56px;
+  left: 16px;
+  width: 32px;
+  height: 32px;
+}
+/* CSS for IMG part ends */
+
+/* CSS for product title bar starts */
+.productTitleBar {
+  margin-top: 5px;
+  margin-left: 15px;
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  flex-direction: column;
+  justify-content: center;
+  font-size: var(--font-size-9xl);
+}
+.productNameAndLikebtn {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 54px;
+}
+.productFullName {
+  position: relative;
+  flex-shrink: 0;
+  line-height: 36px;
+  display: flex;
+  align-items: center;
+  width: 283px;
+}
+.likebtnIcon {
+  position: relative;
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+}
+.titleBarIcons {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--gap-base);
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--productive-helper-text-01-size);
+  font-family: var(--productive-code-02);
+}
+.itemsSold {
+  background-color: var(--layer-layer-accent-layer-accent-01);
+  width: 77px;
+  flex-direction: row;
+  justify-content: center;
+  padding: var(--padding-9xs) var(--padding-5xs);
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.32px;
+  line-height: 16px;
+}
+.ratingAndReviewCount {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 5px;
+  text-align: left;
+}
+.ratingIcon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.reviews {
+  display: flex;
+  align-items: center;
+  position: relative;
+  letter-spacing: 0.32px;
+  line-height: 16px;
+  width: 238px;
+  height: 24px;
+  flex-shrink: 0;
+}
+/* CSS for product title bar starts */
+
+/* Seperating line starts */
+.seprator1 {
+  margin-left: 15px;
+  margin-top: 15px;
+  border-top: 1px solid var(--background-background-active);
+  box-sizing: border-box;
+  width: 361.02px;
+  height: 1px;
+}
+/* Seperating line ends */
+
+/* CSS for product details starts */
+.productDetailes {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+  flex-direction: column;
+  margin-left: 15px;
+  margin-top: 15px;
+  font-size: var(--headings-heading-03-size);
+}
+.descriptionContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 53px;
+}
+.description {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-7xs);
+}
+.descriptionTitle {
+  position: relative;
+  flex-shrink: 0;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  width: 172px;
+  height: 21px;
+}
+.descriptionTxt {
+  position: relative;
+  flex-shrink: 0;
+  font-size: var(--productive-code-02-size);
+  letter-spacing: 0.16px;
+  line-height: 18px;
+  color: var(--text-text-secondary);
+  display: inline-block;
+  width: 359px;
+  height: 55px;
+}
+.sizeTitle {
+  position: relative;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  width: 74px;
+  height: 21px;
+  flex-shrink: 0;
+}
+.sizeContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-5xs);
+  text-align: center;
+  font-size: var(--productive-code-02-size);
+}
+.unselectedSizeContainer {
+  position: relative;
+  width: 38px;
+  height: 38px;
+}
+.unselectedSize {
+  border-radius: 50%;
+  border: 1px solid var(--background-background-active);
+  box-sizing: border-box;
+  width: 38px;
+  height: 38px;
+}
+.selectedSizeContainer {
+  position: relative;
+  width: 38px;
+  height: 38px;
+  color: var(--white);
+}
+.selectedSize {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--button-button-secondary);
+  border: 1px solid var(--background-background-active);
+  box-sizing: border-box;
+}
+.sizeNoTxt {
+  position: absolute;
+  top: calc(50% - 12px);
+  left: calc(50% - 12px);
+  letter-spacing: 0.16px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
+.colorTitle {
+  position: relative;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  width: 74px;
+  height: 21px;
+  flex-shrink: 0;
+}
+.colorBarContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  gap: var(--gap-5xs);
+}
+.color1,
+.color3 {
+  position: relative;
+  border-radius: 50%;
+  background-color: var(--background-background-brand);
+  width: 38px;
+  height: 38px;
+}
+.color3 {
+  background-color: var(--support-support-warning);
+}
+
+/* Quantity Starts Here */
+.quantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-base);
+}
+.quantityTitle {
+  position: relative;
+  line-height: 28px;
+  display: flex;
+  align-items: center;
+  width: 77px;
+  height: 21px;
+  flex-shrink: 0;
+}
+.quantityContainer {
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 267px;
+  display: flex;
+  flex-direction: column;
+  font-size: var(--productive-helper-text-01-size);
+  color: var(--text-text-secondary);
+}
+.quantityInputContainer {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 0 var(--padding-base);
+  gap: var(--gap-5xs);
+  background-color: var(--field-field-01);
+}
+.input {
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  letter-spacing: 0.32px;
+  line-height: 20px;
+}
+.placeholder {
+  flex: 1;
+}
+.incDecIcons {
+  height: 39px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+.subtract {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  display: flex;
+}
+.subtractIcon {
+  width: 20px;
+}
+.addIcon {
+  width: 40px;
+  height: auto;
+}
+.QuantityBorderBottom {
+  align-self: stretch;
+  position: relative;
+  background-color: var(--border-border-strong-01);
+  height: 1px;
+}
+/* Quantity CSS ends here */
+
+/* product button starts here */
+.priceButton {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: absolute;
+  top: 748px;
+  left: 16px;
+  align-items: flex-start;
+  gap: 1px;
+  color: var(--text-text-secondary);
+}
+.totalPrice {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-5xs);
+}
+.totalPriceTxt {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 19px;
+  flex-shrink: 0;
+  letter-spacing: 0.32px;
+  line-height: 16px;
+  width: 83px;
+}
+.totalPriceNumber {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 19px;
+  flex-shrink: 0;
+  color: var(--text-text-primary);
+  width: 171px;
+}
+.addToCartBtn {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: var(--button-button-secondary);
+  width: 189px;
+  overflow: hidden;
+  flex-shrink: 0;
+  align-items: center;
+  padding: var(--padding-smi) var(--padding-base);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  font-size: var(--body-body-compact-02-size);
+  color: var(--white);
+}
+.addToCartText {
+  position: relative;
+  line-height: 22px;
+}
+/* Price button ends here */
