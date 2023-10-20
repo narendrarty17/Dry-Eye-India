@@ -4,25 +4,25 @@ const ProductPage = () => {
   return (
     <div className={styles.productPage}>
       <div className={styles.productImages}>
-        <img className={styles.productImg} alt="" src="/images/Product/product_01_01.png" />
+        <img className={styles.productImg} alt="" src="/product-11@2x.png" />
         {/* 
-        <img className={styles.productImg} alt="" src="/images/Product/product_01_02.png" />
-        <img className={styles.productImg} alt="" src="/images/Product/product_01_03.png" />
-        <img className={styles.productImg} alt="" src="/images/Product/product_01_04.png" /> 
+        <img className={styles.productImg} alt="" src="/product-21@2x.png" />
+        <img className={styles.productImg} alt="" src="/product-31@2x.png" />
+        <img className={styles.productImg} alt="" src="/product-41@2x.png" /> 
         */}
       </div>
-      <img className={styles.backbtnIcon} alt="" src="/images/Product/backArrow.svg" />
+      {/* <img className={styles.backbtnIcon} alt="" src="/arrowleft-1.svg" /> */}
       <div className={styles.productTitleBar}>
         <div className={styles.productNameAndLikebtn}>
           <div className={styles.productFullName}>Nike Air MAX 2022</div>
-          <img className={styles.likebtnIcon} alt="" src="/images/Product/like.svg" />
+          <img className={styles.likebtnIcon} alt="" src="/favorite-1.svg" />
         </div>
         <div className={styles.titleBarIcons}>
           <div className={styles.itemsSold}>
             423 SOLD
           </div>
           <div className={styles.ratingAndReviewCount}>
-            <img className={styles.ratingIcon} alt="" src="/images/Product/rating.svg" />
+            <img className={styles.ratingIcon} alt="" src="/starfilled-1.svg" />
             <div className={styles.reviews}>4.3 (53 reviews )</div>
           </div>
         </div>
@@ -63,7 +63,7 @@ const ProductPage = () => {
             <div className={styles.colorTitle}>Color</div>
             <div className={styles.colorBarContainer}>
               <div className={styles.color1} />
-              <img className={styles.color2} alt="" src="/images/Product/selectedColor.svg" />
+              <img className={styles.color2} alt="" src="/group-4.svg" />
               <div className={styles.color3} />
             </div>
           </div>
@@ -79,13 +79,9 @@ const ProductPage = () => {
                 <img
                   className={styles.subtractIcon}
                   alt=""
-                  src="/images/Product/subtract.svg"
+                  src="/subtract.svg"
                 />
-                <img
-                  className={styles.addIcon}
-                  alt=""
-                  src="/images/Product/add.svg"
-                />
+                <img className={styles.addIcon} alt="" src="/add.svg" />
               </div>
             </div>
             <div className={styles.QuantityBorderBottom} />
@@ -102,7 +98,7 @@ const ProductPage = () => {
         </div>
         <div className={styles.addToCartBtn}>
           <div className={styles.addToCartText}>ADD TO CARD</div>
-          <img alt="" src="/images/Product/cartImg.svg" />
+          <img alt="" src="/icon2.svg" />
         </div>
       </div>
     </div>

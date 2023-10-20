@@ -79,13 +79,9 @@ const ProductPage = () => {
                 <img
                   className={styles.subtractIcon}
                   alt=""
-                  src="/images/Product/subtract.svg"
+                  src="/subtract.svg"
                 />
-                <img
-                  className={styles.addIcon}
-                  alt=""
-                  src="/images/Product/add.svg"
-                />
+                <img className={styles.addIcon} alt="" src="/add.svg" />
               </div>
             </div>
             <div className={styles.QuantityBorderBottom} />
@@ -102,7 +98,7 @@ const ProductPage = () => {
         </div>
         <div className={styles.addToCartBtn}>
           <div className={styles.addToCartText}>ADD TO CARD</div>
-          <img alt="" src="/images/Product/cartImg.svg" />
+          <img alt="" src="/icon2.svg" />
         </div>
       </div>
     </div>
