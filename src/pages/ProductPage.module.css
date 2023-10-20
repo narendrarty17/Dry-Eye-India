@@ -16,8 +16,8 @@
 
 /* CSS for IMG part starts */
 .productImages {
-  width: 100%;
-  height: 400px;
+  width: 393px;
+  height: 393px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -27,8 +27,8 @@
 }
 .productImg {
   position: relative;
-  width: 100%;
-  height: 400px;
+  width: 393px;
+  height: 393px;
   overflow: hidden;
   flex-shrink: 0;
   object-fit: cover;
