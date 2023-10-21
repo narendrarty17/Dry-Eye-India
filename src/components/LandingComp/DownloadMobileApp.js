@@ -1,7 +1,9 @@
+import { useNavigate } from 'react-router-dom';
 import styles from './DryEyeGlasses.module.css';
 import LearnMoreBtn from './SubComp/LearnMoreBtn';
 
 const DryEyeGlasses = () => {
+    const navigate = useNavigate();
     return (
         <section className={styles.productContainer}>
             <img
@@ -25,7 +27,10 @@ const DryEyeGlasses = () => {
                     or administrative hassle) and securely
                 </p>
                 <br />
-                <div className={styles.buttonContainer}>
+                <div
+                    className={styles.buttonContainer}
+                    onClick={() => navigate('/product')}
+                >
                     <LearnMoreBtn />
                 </div>
             </div>

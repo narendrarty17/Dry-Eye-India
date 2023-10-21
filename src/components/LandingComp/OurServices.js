@@ -14,13 +14,13 @@ const cardsData = [
         'cardName': 'Self Diagnosis',
         'cardContent': 'Answer few questions to know if you are suffering from dry eye disease.',
         'cardImg': '/images/LandingPage/servicesIcons/SelfDiagnosis.svg',
-        'cardURL': '/doclist'
+        'cardURL': '/diagnosis'
     },
     {
         'cardName': 'Our Products',
         'cardContent': 'Our products are uniquely designed for Indian Dry Eye Patients',
         'cardImg': '/images/LandingPage/servicesIcons/EmergencyCare.svg',
-        'cardURL': '/doclist'
+        'cardURL': '/product'
     }
 ]
 

@@ -1,7 +1,9 @@
 import LearnMoreBtn from './SubComp/LearnMoreBtn';
 import styles from './DryEyeKit.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const DryEyeKit = () => {
+    const navigate = useNavigate();
     return (
         <section className={styles.productContainer}>
             <div className={styles.productDesc}>
@@ -19,7 +21,10 @@ const DryEyeKit = () => {
                     to calm down anxiety.
                 </p>
                 <br />
-                <div className={styles.buttonContainer}>
+                <div
+                    className={styles.buttonContainer}
+                    onClick={() => navigate('/product')}
+                >
                     <LearnMoreBtn />
                 </div>
             </div>
