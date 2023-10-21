@@ -1,6 +1,7 @@
 import LearnMoreBtn from './SubComp/LearnMoreBtn';
 import ServiceCard from './SubComp/ServiceCard';
 import styles from './OurServices.module.css';
+import { useNavigate } from 'react-router-dom';
 
 const cardsData = [
     {
@@ -21,12 +22,14 @@ const cardsData = [
 ]
 
 const OurServices = () => {
+    const navigate = useNavigate();
     const cards = cardsData.map(cardData => {
         return (<ServiceCard
             key={cardData.cardName}
             cardName={cardData.cardName}
             cardContent={cardData.cardContent}
             cardImg={cardData.cardImg}
+            onClick={() => navigate('/doclist')}
         />);
     })
     return (
