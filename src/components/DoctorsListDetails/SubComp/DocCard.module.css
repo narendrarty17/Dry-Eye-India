@@ -1,0 +1,25 @@
+.docCard {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  padding: 10px;
+  border-radius: var(--br-smi);
+  background-color: #f9edeb;
+  width: 325px;
+  box-sizing: border-box;
+}
+.docImg {
+  width: px;
+  height: 66px;
+  object-fit: cover;
+}
+.docName {
+  line-height: 24px;
+}
+.designationAndClinicAddr {
+  line-height: 24px;
+  top: 44px;
+  left: 89px;
+  font-size: var(--productive-code-02-size);
+  color: var(--color-midnightblue-200);
+}

@@ -1,0 +1,24 @@
+.topDoctors {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  padding-top: 20px;
+  gap: 10px;
+  position: relative;
+  width: 100%;
+  height: auto;
+  text-align: left;
+  font-size: var(--body-body-compact-02-size);
+  color: var(--color-midnightblue-100);
+  font-family: var(--font-circular-std);
+}
+
+@media (max-width: 600px) {
+  .topDoctors {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+}
