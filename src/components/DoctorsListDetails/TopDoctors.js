@@ -11,6 +11,7 @@ const TopDoctors = () => {
       <DocCard />
       <DocCard />
       <DocCard />
+      <DocCard />
     </div>
   );
 };

@@ -7,17 +7,20 @@ const cardsData = [
     {
         'cardName': 'Search Doctor',
         'cardContent': 'Choose the dry eye specialist near to your place',
-        'cardImg': '/images/LandingPage/servicesIcons/SearchDoc.svg'
+        'cardImg': '/images/LandingPage/servicesIcons/SearchDoc.svg',
+        'cardURL': '/doclist'
     },
     {
         'cardName': 'Self Diagnosis',
         'cardContent': 'Answer few questions to know if you are suffering from dry eye disease.',
-        'cardImg': '/images/LandingPage/servicesIcons/SelfDiagnosis.svg'
+        'cardImg': '/images/LandingPage/servicesIcons/SelfDiagnosis.svg',
+        'cardURL': '/doclist'
     },
     {
         'cardName': 'Our Products',
         'cardContent': 'Our products are uniquely designed for Indian Dry Eye Patients',
-        'cardImg': '/images/LandingPage/servicesIcons/EmergencyCare.svg'
+        'cardImg': '/images/LandingPage/servicesIcons/EmergencyCare.svg',
+        'cardURL': '/doclist'
     }
 ]
 
@@ -29,7 +32,7 @@ const OurServices = () => {
             cardName={cardData.cardName}
             cardContent={cardData.cardContent}
             cardImg={cardData.cardImg}
-            onClick={() => navigate('/doclist')}
+            cardURL={cardData.cardURL}
         />);
     })
     return (
