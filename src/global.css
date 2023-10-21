@@ -74,6 +74,25 @@
 @import url("https://fonts.googleapis.com/css2?family=October+Devanagari:wght@300;400;500;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap");
 
+/* Doctor description page fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Circular+Std:wght@400;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sofia+Sans:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Text:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=SF+Pro+Display:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aeonik+Pro+TRIAL:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=NanumMyeongjo:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=October+Devanagari:wght@300;400;500;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400&display=swap");
+
 /* Footer Mobile */
 
 body {
@@ -827,6 +846,178 @@ body {
   --br-61xl: 80px;
   --br-smi: 13px;
   --br-6xs: 7px;
+  --br-81xl: 100px;
+  --br-21xl: 40px;
+  --br-20xl-5: 39.5px;
+  --br-3xs-5: 9.5px;
+  --br-base: 16px;
+  --br-10xl: 29px;
+  --br-xl: 20px;
+  --br-8xs: 5px;
+  --br-36xl: 55px;
+  --br-7xs: 6px;
+  --br-3xs: 10px;
+  --br-xs: 12px;
+
+  /* Effects */
+  --shadow-xs: 0px 1px 2px rgba(16, 24, 40, 0.05);
+
+  /* Doctor description page css files */
+  /* fonts */
+  --font-mulish: Mulish;
+  --font-poppins: Poppins;
+  --font-nunito: Nunito;
+  --font-overpass: Overpass;
+  --font-circular-std: "Circular Std";
+  --productive-helper-text-01: "IBM Plex Sans";
+  --productive-code-02: "IBM Plex Mono";
+  --font-sofia-sans: "Sofia Sans";
+  --font-inherit: inherit;
+  --font-aeonik-pro-trial: "Aeonik Pro TRIAL";
+  --medium: "SF Pro Display";
+  --font-sf-pro-text: "SF Pro Text";
+  --font-work-sans: "Work Sans";
+  --text-sm-medium: Inter;
+  --font-roboto: Roboto;
+  --font-nanummyeongjo: NanumMyeongjo;
+  --font-october-devanagari: "October Devanagari";
+  --font-nunito-sans: "Nunito Sans";
+
+  /* font sizes */
+  --text-lg-semibold-size: 18px;
+  --font-size-7xl: 26px;
+  --display-xs-semibold-size: 24px;
+  --headings-heading-03-size: 20px;
+  --font-size-9xl: 28px;
+  --font-size-17xl: 36px;
+  --body-body-compact-02-size: 16px;
+  --productive-code-02-size: 14px;
+  --productive-helper-text-01-size: 12px;
+  --font-size-mid: 17px;
+  --font-size-lgi: 19px;
+  --font-size-21xl: 40px;
+  --font-size-mini: 15px;
+  --display-lg-semibold-size: 48px;
+  --font-size-2xl: 21px;
+  --font-size-3xl: 22px;
+
+  /* Colors */
+  --white: #fff;
+  --border-border-strong-01: #8d8d8d;
+  --color-gray-200: #757575;
+  --f1534-hyfen: #1f1534;
+  --color-gray-400: #1a1a1a;
+  --gray-900: #101828;
+  --text-text-primary: #161616;
+  --color-gray-300: #151515;
+  --appdark-bg-01: #111617;
+  --bk-1: #141414;
+  --color-gray-100: rgba(255, 255, 255, 0.85);
+  --color-gray-500: rgba(0, 0, 0, 0.34);
+  --bk-2: rgba(38, 38, 38, 0.8);
+  --color-dodgerblue-100: #458ff6;
+  --color-dodgerblue-200: #4089ed;
+  --black-2-5: #444b59;
+  --fg-5: #404040;
+  --gray-700: #344054;
+  --button-button-secondary: #393939;
+  --color-darkslategray-200: #2d3748;
+  --color-darkslategray-100: #233348;
+  --fg-6: #2e2e2e;
+  --blue-2-7: #8699da;
+  --dark-blue-1-8: #789ade;
+  --color-cornflowerblue-100: #5b9bf3;
+  --color-cornflowerblue-200: #0665bc;
+  --color-midnightblue-100: #1e1c61;
+  --color-midnightblue-200: rgba(30, 28, 97, 0.65);
+  --color-sandybrown: #ffb167;
+  --color-royalblue-100: #4b7ffb;
+  --color-royalblue: #0b6cff;
+  --color-aliceblue-100: #f0f9ff;
+  --color-aliceblue-200: #eef4ff;
+  --color-whitesmoke-200: #f9f9f9;
+  --field-field-01: #f4f4f4;
+  --fg-1: #f0f0f0;
+  --color-whitesmoke-100: rgba(234, 236, 240, 0.34);
+  --color-gainsboro: #e6e6e6;
+  --layer-layer-accent-layer-accent-01: #e0e0e0;
+  --fg-2: #d9d9d9;
+  --color-dimgray: #555252;
+  --text-text-secondary: #525252;
+  --label-color-light-primary: #000;
+  --background-background-active: #c6c6c6;
+  --color-silver: rgba(196, 196, 196, 0.01);
+  --support-support-warning: #f1c21b;
+  --primary-600: #7f56d9;
+  --vp-2: #5957ff;
+  --background-background-brand: #0f62fe;
+  --gray-300: #d0d5dd;
+  --neutral-500: #adb5bd;
+  --color-darkgray: #aaa;
+  --fg-3: #a6a6a6;
+  --color-slategray: #7d7987;
+  --gray-500: #667085;
+  --color-ghostwhite-100: #f8f9fc;
+  --color-ghostwhite-200: #f9f5ff;
+  --pink-50: #fdf2fa;
+  --color-lavenderblush-100: #fff1f3;
+  --pink-700: #c11574;
+  --color-darkslateblue: #363f72;
+  --color-slateblue: #6941c6;
+  --color-crimson: #c01048;
+  --color-honeydew-100: #ecfdf3;
+  --color-honeydew: #eaf8e4;
+  --color-seagreen: #027a48;
+  --color-darkblue: #3538cd;
+  --color-seashell: #fff6ed;
+  --color-firebrick: #c4320a;
+  --color-steelblue: #026aa2;
+  --applight-pdbgreen-03: #2ea9ac;
+  --blue-1-9: #c8d3f9;
+  --color-lightgreen: #91de85;
+
+  /* Gaps */
+  --gap-17xl: 36px;
+  --gap-base: 16px;
+  --gap-5xl: 24px;
+  --gap-5xs: 8px;
+  --gap-13xl: 32px;
+  --gap-7xs: 6px;
+  --gap-21xl: 40px;
+  --gap-9xs: 4px;
+  --gap-xs: 12px;
+  --gap-3xl: 22px;
+  --gap-sm: 14px;
+  --gap-11xl: 30px;
+  --gap-11xs: 2px;
+  --gap-29xl: 48px;
+  --gap-6xl: 25px;
+
+  /* Paddings */
+  --padding-mini: 15px;
+  --padding-17xl: 36px;
+  --padding-5xs: 8px;
+  --padding-5xl: 24px;
+  --padding-13xl: 32px;
+  --padding-9xs: 4px;
+  --padding-base: 16px;
+  --padding-smi: 13px;
+  --padding-354xl: 373px;
+  --padding-3xs: 10px;
+  --padding-xs: 12px;
+  --padding-11xl: 30px;
+  --padding-xl: 20px;
+  --padding-11xs: 2px;
+  --padding-77xl: 96px;
+  --padding-sm: 14px;
+  --padding-32xl: 51px;
+  --padding-19xl: 38px;
+
+  /* Border radiuses */
+  --br-5xs: 8px;
+  --br-61xl: 80px;
+  --br-6xs: 7px;
+  --br-smi: 13px;
   --br-81xl: 100px;
   --br-21xl: 40px;
   --br-20xl-5: 39.5px;

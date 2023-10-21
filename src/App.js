@@ -13,6 +13,7 @@ import Questions from "./pages/Questions";
 import Results from "./pages/Results";
 import ProductPage from "./pages/ProductPage";
 import DocList from "./pages/DocList";
+import DocProfile from './pages/DocProfile'
 
 function App() {
   const action = useNavigationType();
@@ -64,6 +65,7 @@ function App() {
       <Route path="/results" element={<Results />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/doclist" element={<DocList />} />
+      <Route path="/docprofile" element={<DocProfile />} />
     </Routes>
   );
 }

@@ -1,0 +1,123 @@
+.container {
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: var(--white);
+  width: 100%;
+  overflow: hidden;
+  text-align: left;
+  font-size: var(--productive-code-02-size);
+  color: var(--color-midnightblue-100);
+  font-family: var(--font-circular-std);
+  background-color: var(--color-whitesmoke-200);
+  box-shadow: 0-2px 17px rgba(0, 0, 0, 0.04);
+}
+/* header starts here */
+.header {
+  padding-top: 20px;
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  align-items: center;
+  height: 120px;
+  font-size: var(--text-lg-semibold-size);
+}
+.drPic {
+  width: 80px;
+  object-fit: cover;
+}
+.drName {
+  line-height: 24px;
+  font-weight: 900;
+}
+.drSpecialityAndHospital {
+  line-height: 24px;
+  font-size: var(--productive-code-02-size);
+  color: var(--color-midnightblue-200);
+}
+.drContactMediaIcons {
+  display: flex;
+  gap: 10px;
+}
+.contactIcons {
+  width: 35px;
+  height: 35px;
+}
+/* Header ends here */
+
+/* About section starts here */
+.about {
+  width: 329px;
+  color: var(--color-midnightblue-200);
+}
+.aboutHeading {
+  font-size: var(--body-body-compact-02-size);
+  color: var(--color-midnightblue-100);
+  line-height: 24px;
+  display: inline-block;
+}
+.aboutContent {
+  margin-top: 10px;
+  line-height: 22px;
+}
+/* About section ends here */
+
+/* Upcoming Schedules section starts here */
+.upcomingSchedules {
+  width: 325px;
+}
+.upcomingSchedulesHeading {
+  font-size: var(--body-body-compact-02-size);
+  line-height: 24px;
+  display: inline-block;
+}
+.scheduleDetails {
+  box-sizing: border-box;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border-radius: var(--br-smi);
+  background-color: #edf1fa;
+  width: 325px;
+  height: 87px;
+  color: var(--color-royalblue-100);
+}
+.scheduleDate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--br-6xs);
+  background-color: #d8e3ff;
+  width: 55px;
+  height: 57px;
+}
+.month {
+  font-weight: 900;
+}
+.date {
+  font-size: var(--display-xs-semibold-size);
+  font-weight: 900;
+}
+.scheduleNameDayTime {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.scheduleName {
+  font-size: var(--body-body-compact-02-size);
+  color: var(--color-midnightblue-100);
+}
+.scheduleDayTime {
+  color: var(--color-midnightblue-200);
+}
+.placeHolder {
+  flex: 1;
+}
+
+/* Upcoming schedules ends here */
