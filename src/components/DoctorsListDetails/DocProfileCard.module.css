@@ -143,7 +143,6 @@
 }
 @media (max-width: 750px) {
   .container {
-    text-align: center;
   }
   .upcomingSchedules {
     width: 375px;
