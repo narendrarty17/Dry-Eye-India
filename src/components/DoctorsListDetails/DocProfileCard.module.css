@@ -1,5 +1,5 @@
 .container {
-  margin: 10px 0;
+  padding: 20px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -7,7 +7,6 @@
   gap: 20px;
   position: relative;
   background-color: var(--white);
-  width: 100%;
   overflow: hidden;
   text-align: left;
   font-size: var(--productive-code-02-size);
@@ -15,14 +14,18 @@
   font-family: var(--font-circular-std);
   box-shadow: 0-2px 17px rgba(0, 0, 0, 0.04);
 }
+.part1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 375px;
+}
 /* header starts here */
 .header {
-  padding-top: 20px;
   display: flex;
   gap: 20px;
   justify-content: flex-start;
   align-items: center;
-  width: 375px;
   height: 120px;
   font-size: var(--text-lg-semibold-size);
 }
@@ -56,7 +59,6 @@
 
 /* About section starts here */
 .about {
-  width: 375px;
   color: var(--color-midnightblue-200);
 }
 .aboutHeading {
@@ -73,7 +75,7 @@
 
 /* Upcoming Schedules section starts here */
 .upcomingSchedules {
-  width: 375px;
+  width: 300px;
 }
 .upcomingSchedulesHeading {
   font-size: var(--body-body-compact-02-size);
@@ -88,14 +90,13 @@
 }
 .scheduleDetails {
   box-sizing: border-box;
-  padding: 0 15px;
+  padding: 15px 15px;
   display: flex;
   align-items: center;
   gap: 20px;
   border-radius: var(--br-smi);
   background-color: #edf1fa;
-  width: 325px;
-  height: 87px;
+
   color: var(--color-royalblue-100);
 }
 .scheduleDate {
@@ -132,3 +133,19 @@
 }
 
 /* Upcoming schedules ends here */
+
+@media (min-width: 750px) {
+  .container {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-evenly;
+  }
+}
+@media (max-width: 750px) {
+  .container {
+    text-align: center;
+  }
+  .upcomingSchedules {
+    width: 375px;
+  }
+}
