@@ -5,7 +5,7 @@
   padding: 10px;
   border-radius: var(--br-smi);
   background-color: #f9edeb;
-  width: 325px;
+  width: 350px;
   box-sizing: border-box;
 }
 .docImg {
@@ -13,13 +13,13 @@
   height: 66px;
   object-fit: cover;
 }
-.docName {
-  line-height: 24px;
+.docDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
-.designationAndClinicAddr {
-  line-height: 24px;
-  top: 44px;
-  left: 89px;
+.designation,
+.clinicAddr {
   font-size: var(--productive-code-02-size);
   color: var(--color-midnightblue-200);
 }

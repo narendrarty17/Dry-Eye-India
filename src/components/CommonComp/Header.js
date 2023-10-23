@@ -1,12 +1,59 @@
 import { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useLocation, useNavigate } from "react-router-dom";
 import styles from "./Header.module.css";
 import Sidebar from "./SubComp/Sidebar";
 import Logo from "./SubComp/Logo";
 
+const headerLinks = [
+  {
+    'linkText': 'Home',
+    'linkURL': '/',
+    'linkId': 0
+  },
+  {
+    'linkText': 'Find a doctor',
+    'linkURL': '/doclist',
+    'linkId': 1
+  },
+  {
+    'linkText': 'Self Diagnosis',
+    'linkURL': '/diagnosis',
+    'linkId': 2
+  },
+  {
+    'linkText': 'Blogs',
+    'linkURL': '/blogpost',
+    'linkId': 3
+  },
+  {
+    'linkText': 'Our Products',
+    'linkURL': '/product',
+    'linkId': 4
+  }
+
+
+]
 const Header = () => {
   const navigate = useNavigate();
+  const location = useLocation();
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [activeLink, setActiveLink] = useState('/home');
+  useEffect(() => {
+    setActiveLink(location.pathname);
+  }, [])
+  const linkBtns = headerLinks.map((link) => {
+    return (
+      <button
+        className={link.linkURL == activeLink ? styles.linkBtnFocus : styles.linkBtn}
+        key={link.linkId}
+        onClick={() => {
+          navigate(link.linkURL);
+        }}
+      >
+        {link.linkText}
+      </button>
+    )
+  })
   const toggleSidebar = () => {
     setSidebarOpen(!sidebarOpen);
   }
@@ -21,32 +68,13 @@ const Header = () => {
     );
   }
 
-  useEffect(() => {
-    console.log('useEffect ran');
-  }, [])
+
 
   return (
     <header className={styles.header}>
       {sidebarOpen ? '' : <Logo />}
       <nav className={styles.navbarDesktop}>
-        <button
-          className={styles.home}
-          onClick={() => navigate('/')}
-        >
-          Home
-        </button>
-        <button
-          className={styles.findADoctor}
-          onClick={() => navigate('/consult')}
-        >
-          Find a doctor
-        </button>
-        <button className={styles.apps}>Apps</button>
-        <button
-          className={styles.testimonials}
-          onClick={() => navigate('/blogpost')}
-        >Blogs</button>
-        <button className={styles.aboutus}>About us</button>
+        {linkBtns}
       </nav>
       <nav className={styles.navbarMobile}>
         {sidebarOpen ?

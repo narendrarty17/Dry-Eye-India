@@ -29,18 +29,15 @@
   z-index: 1;
 }
 
-.home {
-  font-family: var(--font-poppins);
-}
-.home,
-.findADoctor,
-.apps,
-.testimonials,
-.aboutus {
+.linkBtn,
+.linkBtnFocus {
   font-size: 0.9rem;
   color: black;
   border: 0;
   background-color: white;
+}
+.linkBtnFocus {
+  font-weight: 700;
 }
 
 @media (max-width: 720px) {

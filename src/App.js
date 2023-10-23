@@ -65,7 +65,7 @@ function App() {
       <Route path="/results" element={<Results />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/doclist" element={<DocList />} />
-      <Route path="/docprofile" element={<DocProfile />} />
+      <Route path="/docprofile/:docId" element={<DocProfile />} />
     </Routes>
   );
 }

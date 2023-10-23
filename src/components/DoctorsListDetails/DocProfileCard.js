@@ -1,15 +1,25 @@
+import { useParams } from 'react-router-dom';
 import styles from './DocProfileCard.module.css';
+import docsData from './DocsData';
 
 const DocProfileCard = () => {
+    const { docId } = useParams();
+
+    // Find the doctor data based on the docId
+    const selectedDoc = docsData.find((doc) => {
+        return parseInt(doc.docId) == parseInt(docId)
+    })
     return (
         <div className={styles.container}>
             <div className={styles.header}>
                 <img className={styles.drPic} alt="" src="/pro-pic@2x.png" />
                 <div className={styles.drDetail}>
                     <div>
-                        <div className={styles.drName}>Dr. Stella Kane</div>
+                        <div className={styles.drName}>{selectedDoc.docName}</div>
                         <div className={styles.drSpecialityAndHospital}>
-                            Heart Surgeon - Flower Hospitals
+                            {selectedDoc.specialization}
+                            <br />
+                            {selectedDoc.clinicAddr}
                         </div>
                     </div>
                     <div className={styles.drContactMediaIcons}>
@@ -23,12 +33,7 @@ const DocProfileCard = () => {
             <div className={styles.about}>
                 <b className={styles.aboutHeading}>About Doctor</b>
                 <div className={styles.aboutContent}>
-                    Dr. Stella is the top most heart surgeon in Flower
-                    Hospital. She has done over 100 successful sugeries
-                    within past 3 years. She has achieved several
-                    awards for her wonderful contribution in her own
-                    field. She’s available for private consultation for
-                    given schedules.
+                    {selectedDoc.about}
                 </div>
             </div>
             <div className={styles.upcomingSchedules}>

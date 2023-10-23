@@ -3,7 +3,6 @@ import styles from "./ServiceCard.module.css";
 
 const ServiceCard = ({ cardName, cardContent, cardImg, cardURL }) => {
   const navigate = useNavigate();
-  console.log(cardURL);
   return (
     <div
       className={styles.serviceCard}

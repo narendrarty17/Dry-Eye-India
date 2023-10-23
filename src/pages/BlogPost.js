@@ -11,13 +11,10 @@ import Footer from "../components/CommonComp/Footer";
 const BlogPost = () => {
   return (
     <div>
-      <div className={styles.mainHeader}>
-        <Header />
-      </div>
+      <Header />
       <div className={styles.blogPost}>
-        <SideNav />
-        <div className={styles.sectionsSeperator} />
         <BlogArticle />
+        <div className={styles.placeholder} />
         <div className={styles.sectionsSeperator} />
         <BlogSidebar />
       </div>
