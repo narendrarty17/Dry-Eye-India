@@ -10,7 +10,7 @@ const DocProfileCard = () => {
 
     // Find the doctor data based on the docId
     const selectedDoc = docsData.find((doc) => {
-        return parseInt(doc.docId) == parseInt(docId)
+        return parseInt(doc.id) == parseInt(docId)
     })
     const appointmentDetails = selectedDoc.otherDetails.map((detail) => {
         return (
@@ -34,14 +34,14 @@ const DocProfileCard = () => {
         <div className={styles.container}>
             <div className={styles.part1}>
                 <div className={styles.header}>
-                    <img className={styles.drPic} alt="" src="/images/SearchDoctor/docImgProfilePg.png" />
+                    <img className={styles.drPic} alt="" src={selectedDoc.img} />
                     <div className={styles.drDetail}>
                         <div>
-                            <div className={styles.drName}>{selectedDoc.docName}</div>
+                            <div className={styles.drName}>{selectedDoc.name}</div>
                             <div className={styles.drSpecialityAndHospital}>
                                 {selectedDoc.specialization}
                                 <br />
-                                {selectedDoc.clinicAddr}
+                                {selectedDoc.addr}
                             </div>
                         </div>
                         <div className={styles.drContactMediaIcons}>
