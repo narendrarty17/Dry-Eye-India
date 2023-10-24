@@ -11,19 +11,10 @@
   font-size: var(--body-body-compact-02-size);
   color: var(--color-midnightblue-100);
   font-family: var(--font-circular-std);
-  width: 100vw;
-}
-.searchandcategoriesContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 20px;
-  width: 650px;
 }
 .searchBar {
   position: relative;
   display: flex;
-  width: 50vw;
 }
 .searchDocInput {
   padding-left: 20px;
@@ -33,7 +24,7 @@
   border-radius: 73px 0 0 73px;
   box-sizing: border-box;
   color: var(--color-midnightblue-200);
-  width: 50vw;
+  width: 500px;
 }
 .searchDocInput:focus {
   background-color: #e7d3d3;
@@ -51,10 +42,8 @@
 }
 .categories {
   margin-top: 10px;
-  margin-left: 10px;
   display: flex;
   gap: 20px;
-  width: 350px;
   box-sizing: border-box;
 }
 .categoriesHeading {
@@ -72,32 +61,24 @@
   flex-direction: row;
   justify-content: center;
   gap: 20px;
-  width: 100vw;
 }
 .cardList {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-@media (max-width: 900px) {
-  .searchBar {
-    width: 600px;
-  }
+.dummyDiv {
+  width: 230px;
+}
+@media (max-width: 600px) {
   .cardLists {
     flex-direction: column;
     align-items: center;
   }
-  .container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
+  .searchDocInput {
+    width: 300px;
   }
-  .searchandcategoriesContainer {
-    align-items: center;
-  }
-  .searchBar {
-    width: 350px;
-    align-self: center;
+  .dummyDiv {
+    display: none;
   }
 }

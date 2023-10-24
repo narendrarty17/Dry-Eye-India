@@ -28,36 +28,40 @@ const TopDoctors = () => {
   })
   return (
     <div className={styles.container}>
-      <div className={styles.searchandcategoriesContainer}>
-        <div className={styles.searchBar}>
-          <input
-            className={styles.searchDocInput}
-            name='search doctor'
-            placeholder='Search Doctor'
+      <div className={styles.searchBar}>
+        <input
+          className={styles.searchDocInput}
+          name='search doctor'
+          placeholder='Search Doctor'
+        />
+        <img
+          className={styles.searchIcon}
+          src="/images/SearchDoctor/searchIcon.svg"
+        />
+      </div>
+      <div className={styles.categoriesContainer}>
+        <b className={styles.categoriesHeading}>Categories</b>
+        <div className={styles.categories}>
+          <img
+            className={styles.categoryIcons}
+            src="/images/SearchDoctor/tooth.svg"
           />
           <img
-            className={styles.searchIcon}
-            src="/images/SearchDoctor/searchIcon.svg"
+            className={styles.categoryIcons}
+            style={{ backgroundColor: '#ffb167' }}
+            src="/images/SearchDoctor/heartBeat.svg"
           />
-        </div>
-        <div className={styles.categoriesContainer}>
-          <b className={styles.categoriesHeading}>Categories</b>
-          <div className={styles.categories}>
-            <img
-              className={styles.categoryIcons}
-              src="/images/SearchDoctor/tooth.svg"
-            />
-            <img
-              className={styles.categoryIcons}
-              style={{ backgroundColor: '#ffb167' }}
-              src="/images/SearchDoctor/heartBeat.svg"
-            />
-            <img
-              className={styles.categoryIcons}
-              style={{ backgroundColor: 'blue' }}
-              src="/images/SearchDoctor/tooth.svg"
-            />
-          </div>
+          <img
+            className={styles.categoryIcons}
+            style={{ backgroundColor: 'blue' }}
+            src="/images/SearchDoctor/tooth.svg"
+          />
+          <img
+            className={styles.categoryIcons}
+            style={{ backgroundColor: '#ffb167' }}
+            src="/images/SearchDoctor/heartBeat.svg"
+          />
+          <div className={styles.dummyDiv} />
         </div>
       </div>
       <div className={styles.cardLists}>

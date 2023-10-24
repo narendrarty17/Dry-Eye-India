@@ -37,7 +37,9 @@ const DocProfileCard = () => {
                     <img className={styles.drPic} alt="" src={selectedDoc.img} />
                     <div className={styles.drDetail}>
                         <div>
-                            <div className={styles.drName}>{selectedDoc.name}</div>
+                            <div className={styles.drName}>
+                                {selectedDoc.name}
+                            </div>
                             <div className={styles.drSpecialityAndHospital}>
                                 {selectedDoc.specialization}
                                 <br />
