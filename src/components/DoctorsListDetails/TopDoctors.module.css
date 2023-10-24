@@ -29,7 +29,7 @@
   padding-left: 20px;
   border: 0;
   background-color: #f2f2f2;
-  height: 50px;
+  height: 40px;
   border-radius: 73px 0 0 73px;
   box-sizing: border-box;
   color: var(--color-midnightblue-200);
@@ -44,7 +44,7 @@
   text-decoration: none;
   background-color: #f57e71;
   padding: 5px;
-  height: 50px;
+  height: 40px;
   width: 65px;
   border-radius: 0 64px 64px 0;
   box-sizing: border-box;
@@ -83,8 +83,12 @@
   .searchBar {
     width: 600px;
   }
+  .cardLists {
+    flex-direction: column;
+    align-items: center;
+  }
 }
-@media (max-width: 650px) {
+@media (max-width: 700px) {
   .container {
     display: flex;
     flex-direction: column;
@@ -97,9 +101,5 @@
   .searchBar {
     width: 350px;
     align-self: center;
-  }
-  .cardLists {
-    flex-direction: column;
-    align-items: center;
   }
 }
