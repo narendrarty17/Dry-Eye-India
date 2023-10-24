@@ -1,0 +1,12 @@
+.categories {
+  display: flex;
+  gap: 20px;
+  width: 350px;
+}
+.categoryIcons {
+  background-color: #4b7ffb;
+  width: 30px;
+  height: 28px;
+  padding: 22px;
+  border-radius: 15px;
+}

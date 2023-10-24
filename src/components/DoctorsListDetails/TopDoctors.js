@@ -16,6 +16,29 @@ const TopDoctors = () => {
   })
   return (
     <div className={styles.topDoctors}>
+      <div className={styles.searchBar}>
+        <input
+          className={styles.searchDocInput}
+        />
+        <img
+          className={styles.searchIcon}
+          src="/images/SearchDoctor/searchIcon.svg"
+        />
+      </div>
+      <div className={styles.categoriesContainer}>
+        <b className={styles.categoriesHeading}>Categories</b>
+        <div className={styles.categories}>
+          <img
+            className={styles.categoryIcons}
+            src="/images/SearchDoctor/tooth.svg"
+          />
+          <img
+            className={styles.categoryIcons}
+            style={{ backgroundColor: '#ffb167' }}
+            src="/images/SearchDoctor/heartBeat.svg"
+          />
+        </div>
+      </div>
       <div className={styles.categories}>
         <b>Top Doctors</b>
       </div>

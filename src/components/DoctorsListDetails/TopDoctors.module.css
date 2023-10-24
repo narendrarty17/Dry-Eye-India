@@ -4,7 +4,7 @@
   align-items: center;
   padding-left: 20px;
   padding-top: 20px;
-  gap: 10px;
+  gap: 20px;
   position: relative;
   width: 100%;
   height: auto;
@@ -12,6 +12,46 @@
   font-size: var(--body-body-compact-02-size);
   color: var(--color-midnightblue-100);
   font-family: var(--font-circular-std);
+}
+.searchBar {
+  position: relative;
+  width: 325px;
+}
+.searchDocInput {
+  border: 0;
+  background-color: #f2f2f2;
+  height: 40px;
+  width: 100%;
+  border-radius: 73px;
+}
+.searchIcon {
+  position: absolute;
+  top: -1px;
+  right: -2px;
+  background-color: #f57e71;
+  padding: 5px;
+  height: 44px;
+  width: 65px;
+  border-radius: 64px;
+  box-sizing: border-box;
+}
+.categories {
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  gap: 20px;
+  width: 350px;
+  box-sizing: border-box;
+}
+.categoriesHeading {
+  margin-left: 10px;
+}
+.categoryIcons {
+  background-color: #4b7ffb;
+  width: 30px;
+  height: 28px;
+  padding: 22px;
+  border-radius: 15px;
 }
 
 @media (max-width: 600px) {
