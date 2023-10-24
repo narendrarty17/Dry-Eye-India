@@ -134,14 +134,17 @@
 
 /* Upcoming schedules ends here */
 
-@media (min-width: 750px) {
+@media (min-width: 600px) {
   .container {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-evenly;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 600px) {
+  .container {
+    padding-left: 20px;
+  }
   .upcomingSchedules {
     width: 375px;
   }
