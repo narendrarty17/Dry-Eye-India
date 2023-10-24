@@ -74,16 +74,16 @@
 /* About section ends here */
 
 /* Upcoming Schedules section starts here */
-.upcomingSchedules {
+.appointmentDetails {
   width: 300px;
 }
-.upcomingSchedulesHeading {
+.appointmentDetailsHeading {
   font-size: var(--body-body-compact-02-size);
   line-height: 24px;
   display: inline-block;
   margin-bottom: 20px;
 }
-.schedules {
+.appointment {
   display: flex;
   flex-direction: column;
   gap: 10px;

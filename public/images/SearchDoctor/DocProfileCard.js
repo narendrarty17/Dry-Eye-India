@@ -45,9 +45,9 @@ const DocProfileCard = () => {
                             </div>
                         </div>
                         <div className={styles.drContactMediaIcons}>
-                            <img className={styles.contactIcon} alt="" src="/images/SearchDoctor/callIcon.svg" />
-                            <img className={styles.contactIcon} alt="" src="/images/SearchDoctor/messageIcon.svg" />
-                            <img className={styles.contactIcon} alt="" src="/images/SearchDoctor/videoCallIcon.svg" />
+                            <img className={styles.contactIcon} alt="" src="/group-14.svg" />
+                            <img className={styles.contactIcon} alt="" src="/group-13.svg" />
+                            <img className={styles.contactIcon} alt="" src="/group-12.svg" />
                         </div>
                     </div>
                     <div className={styles.placeHolder} />
