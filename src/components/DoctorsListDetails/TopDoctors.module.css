@@ -29,7 +29,7 @@
   padding-left: 20px;
   border: 0;
   background-color: #f2f2f2;
-  height: 40px;
+  height: 50px;
   border-radius: 73px 0 0 73px;
   box-sizing: border-box;
   color: var(--color-midnightblue-200);
@@ -44,7 +44,7 @@
   text-decoration: none;
   background-color: #f57e71;
   padding: 5px;
-  height: 40px;
+  height: 50px;
   width: 65px;
   border-radius: 0 64px 64px 0;
   box-sizing: border-box;
@@ -96,6 +96,7 @@
   }
   .searchBar {
     width: 350px;
+    align-self: center;
   }
   .cardLists {
     flex-direction: column;
