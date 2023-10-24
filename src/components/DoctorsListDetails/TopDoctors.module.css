@@ -1,4 +1,4 @@
-.topDoctors {
+.container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,33 +6,47 @@
   padding-top: 20px;
   gap: 20px;
   position: relative;
-  width: 100%;
   height: auto;
   text-align: left;
   font-size: var(--body-body-compact-02-size);
   color: var(--color-midnightblue-100);
   font-family: var(--font-circular-std);
+  width: 100vw;
+}
+.searchandcategoriesContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 650px;
 }
 .searchBar {
   position: relative;
-  width: 325px;
+  display: flex;
+  width: 50vw;
 }
 .searchDocInput {
+  padding-left: 20px;
   border: 0;
   background-color: #f2f2f2;
   height: 40px;
-  width: 100%;
-  border-radius: 73px;
+  border-radius: 73px 0 0 73px;
+  box-sizing: border-box;
+  color: var(--color-midnightblue-200);
+  width: 50vw;
+}
+.searchDocInput:focus {
+  background-color: #e7d3d3;
+  border: none;
+  outline: none;
 }
 .searchIcon {
-  position: absolute;
-  top: -1px;
-  right: -2px;
+  text-decoration: none;
   background-color: #f57e71;
   padding: 5px;
-  height: 44px;
+  height: 40px;
   width: 65px;
-  border-radius: 64px;
+  border-radius: 0 64px 64px 0;
   box-sizing: border-box;
 }
 .categories {
@@ -53,12 +67,38 @@
   padding: 22px;
   border-radius: 15px;
 }
-
-@media (max-width: 600px) {
-  .topDoctors {
+.cardLists {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  width: 100vw;
+}
+.cardList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 800px) {
+  .searchBar {
+    width: 600px;
+  }
+}
+@media (max-width: 650px) {
+  .container {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-left: 0;
+  }
+  .searchandcategoriesContainer {
+    align-items: center;
+  }
+  .searchBar {
+    width: 350px;
+  }
+  .cardLists {
+    flex-direction: column;
+    align-items: center;
   }
 }

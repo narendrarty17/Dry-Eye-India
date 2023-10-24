@@ -5,12 +5,12 @@
   padding: 10px;
   border-radius: var(--br-smi);
   background-color: #f9edeb;
-  width: 350px;
+  width: 300px;
   box-sizing: border-box;
 }
 .docImg {
-  width: px;
-  height: 66px;
+  border-radius: 50%;
+  width: 66px;
   object-fit: cover;
 }
 .docDetails {
@@ -22,4 +22,9 @@
 .clinicAddr {
   font-size: var(--productive-code-02-size);
   color: var(--color-midnightblue-200);
+}
+@media (max-width: 600px) {
+  .docCard {
+    width: 350px;
+  }
 }
