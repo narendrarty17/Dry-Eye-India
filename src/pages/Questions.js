@@ -19,25 +19,25 @@ const Questions = () => {
                             <div className={styles.option}>
                                 <input className={styles.checkbox} type="checkbox" name="option1" />
                                 <label for="option1">
-                                    &nbsp;&nbsp;Scope 1 - Determine environmental impact levels.
+                                    Scope 1 - Determine environmental impact levels.
                                 </label>
                             </div>
                             <div className={styles.option}>
                                 <input className={styles.checkbox} type="checkbox" name="option2" />
                                 <label for="option2">
-                                    &nbsp;&nbsp;Scope 2 - Reduce carbon footprints.
+                                    Scope 2 - Reduce carbon footprints.
                                 </label>
                             </div>
                             <div className={styles.option}>
                                 <input className={styles.checkbox} type="checkbox" name="option3" />
                                 <label for="option3">
-                                    &nbsp;&nbsp;Scope 3 - Enhance environmental impacts on a larger scale.
+                                    Scope 3 - Enhance environmental impacts on a larger scale.
                                 </label>
                             </div>
                             <div className={styles.option}>
                                 <input className={styles.checkbox} type="checkbox" name="option4" />
                                 <label for="option4">
-                                    &nbsp;&nbsp;I do not know the answer to the question
+                                    I do not know the answer to the question
                                 </label>
                             </div>
                         </div>

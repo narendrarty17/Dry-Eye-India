@@ -1,9 +1,11 @@
 .container {
-  margin-top: 30px;
-  padding: 0 15px;
+  margin-top: 50px;
+  margin-bottom: 80px;
+  padding: 0 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  font-family: Mulish;
 }
 .question {
   display: flex;
@@ -28,13 +30,13 @@
   color: #6a6a6a;
 }
 .checkbox {
-  height: 15px;
-  width: 15px;
+  height: 18px;
+  width: 18px;
 }
 .option {
   display: flex;
   flex-direction: row;
-  align-items: center;
+  gap: 10px;
 }
 .btns {
   display: flex;
