@@ -1,6 +1,56 @@
-.questionCardContainer {
+.container {
+  margin-top: 30px;
+  padding: 0 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.question {
   display: flex;
   flex-direction: column;
+  gap: 15px;
+}
+.questionLabel {
+  color: #0f66cc;
+  font-size: 18px;
+  font-weight: 600;
+}
+.questionMain {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 1.1rem;
+}
+.checkboxesContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  color: #6a6a6a;
+}
+.checkbox {
+  height: 15px;
+  width: 15px;
+}
+.option {
+  display: flex;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
+}
+.btns {
+  display: flex;
+  gap: 20px;
+}
+.previous {
+  font-size: 1.2rem;
+  background-color: white;
+  padding: 10px 15px;
+  border-radius: 5px;
+  border: 2px solid #6a6a6a;
+}
+.next {
+  font-size: 1.2rem;
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #0f66cc;
+  color: white;
 }
