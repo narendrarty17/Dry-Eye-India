@@ -58,7 +58,7 @@ const Specialists = () => {
             />
             <div>Aqueous Deficiency</div>
           </div>
-          <div className={styles.categoryCard}>
+          <div className={styles.categoryCardLast}>
             <img
               className={styles.categoryIcons}
               src="/images/SearchDoctor/CategoriesImgs/mixed.jpeg"
