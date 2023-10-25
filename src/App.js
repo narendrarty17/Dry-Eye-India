@@ -14,6 +14,7 @@ import Results from "./pages/Results";
 import ProductPage from "./pages/ProductPage";
 import DocList from "./pages/DocList";
 import SpecialistProfile from "./pages/SpecialistProfile";
+import Welcome from "./components/Diagnosis/Welcome";
 
 function App() {
   const action = useNavigationType();
@@ -60,6 +61,7 @@ function App() {
       <Route path="/" element={<LandingPgCopy />} />
       <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
+      <Route path="/welcome" element={<Welcome />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
       <Route path="/questions" element={<Questions />} />
       <Route path="/results" element={<Results />} />

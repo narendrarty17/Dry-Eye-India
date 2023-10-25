@@ -14,6 +14,7 @@ const Specialists = () => {
         profession={doc.profession}
         specialization={doc.specialization}
         addr={doc.addr}
+        backgroundColor={doc.backgroundColor}
       />
     );
   })
@@ -26,6 +27,7 @@ const Specialists = () => {
       name={optometrist.name}
       specialization={optometrist.specialization}
       addr={optometrist.addr}
+      backgroundColor={optometrist.backgroundColor}
     />)
   })
   return (

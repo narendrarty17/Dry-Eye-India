@@ -1,13 +1,15 @@
 import { useNavigate } from 'react-router-dom';
 import styles from './SpecialistCard.module.css';
 
-const DocCard = ({ name, specialization, addr, id, img, profession }) => {
+const SpecialistCard = ({ name, specialization, addr, id, img, profession, backgroundColor }) => {
   const navigate = useNavigate();
   const navigatePath = `/specialistprofile/${id}/profession/${profession}`;
+  console.log(backgroundColor);
   return (
     <div
       className={styles.docCard}
       onClick={() => navigate(navigatePath)}
+      style={{ backgroundColor: `${backgroundColor}` }}
     >
       <img className={styles.docImg} alt="" src={img} />
       <div className={styles.docDetails}>
@@ -20,4 +22,4 @@ const DocCard = ({ name, specialization, addr, id, img, profession }) => {
     </div>
   );
 }
-export default DocCard;
+export default SpecialistCard;

@@ -1,40 +1,67 @@
 .container {
-  overflow: hidden;
-  text-align: center;
-  font-size: 31px;
-  color: var(--white);
-  font-family: var(--font-sofia-sans);
-  padding-top: 250px;
-  box-sizing: border-box;
-  width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  background-image: linear-gradient(
-      180deg,
-      rgba(11, 108, 255, 0) 30%,
-      rgba(11, 108, 255, 0.63) 40%,
-      #0b6cff 50%
-    ),
-    url("/public/images/SelfDiagnosis/LetsStart/coverImg.png");
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+.main {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
-.text {
-  margin-top: 5px;
-  font-size: 1.5rem;
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: 2rem;
+  font-weight: 600;
 }
-.letsContinue {
+.mainTxt {
+  display: flex;
+  flex-direction: column;
+  line-height: 24px;
+  color: #6b6996;
+}
+.letsStarted {
+  background-color: #ef716b;
+  width: 145px;
+  height: 40px;
+  border-radius: 35px;
+  border: 0;
+  outline: none;
+  color: white;
+}
+.welcomeIconMobile {
+  display: none;
+}
+.welcomeIconDesktop {
+  width: 350px;
+  height: auto;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 15px 17px rgba(0, 0, 0, 0.25);
-  width: 300px;
-  height: 50px;
-  mix-blend-mode: normal;
-  cursor: pointer;
-  font-size: 1.2rem;
-  font-weight: 500;
-  color: #0b6cff;
+}
+
+@media (max-width: 1000px) {
+  .welcomeIconDesktop {
+    width: 300px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    flex-direction: column;
+  }
+  .main {
+    align-items: center;
+  }
+  .title {
+    flex-direction: column;
+    align-items: center;
+  }
+  .welcomeIconMobile {
+    display: block;
+  }
+  .welcomeIconDesktop {
+    display: none;
+  }
 }
