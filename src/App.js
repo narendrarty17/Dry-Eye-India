@@ -61,7 +61,6 @@ function App() {
       <Route path="/" element={<LandingPgCopy />} />
       <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
-      <Route path="/welcome" element={<Welcome />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
       <Route path="/questions" element={<Questions />} />
       <Route path="/results" element={<Results />} />
