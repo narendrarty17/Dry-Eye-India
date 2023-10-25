@@ -42,17 +42,27 @@
 .categories {
   margin-top: 10px;
   display: flex;
-  gap: 20px;
+  flex-wrap: wrap;
+  gap: 10px;
   box-sizing: border-box;
 }
 .categoriesHeading {
   margin-left: 10px;
 }
+.categoryCard {
+  width: 168px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  letter-spacing: 1px;
+  color: var(--color-midnightblue-200);
+  font-size: 0.8rem;
+  font-weight: 550;
+}
 .categoryIcons {
-  background-color: #4b7ffb;
-  width: 30px;
-  height: 28px;
-  padding: 22px;
+  width: 168px;
+  height: 96px;
   border-radius: 15px;
 }
 .cardLists {
@@ -67,9 +77,12 @@
   gap: 10px;
 }
 .dummyDiv {
-  width: 230px;
+  width: 80px;
 }
 @media (max-width: 600px) {
+  .categories {
+    flex-direction: column;
+  }
   .cardLists {
     flex-direction: column;
     align-items: center;

@@ -1,24 +1,26 @@
-import DocCard from "./SubComp/DocCard";
-import styles from "./TopDoctors.module.css";
-import docsData from "./DocsData";
-import OptometristData from "./OptometristData";
+import SpecialistCard from "./SubComp/SpecialistCard";
+import styles from "./Specialists.module.css";
+import docsData from "./Data/DocsData";
+import OptometristData from "./Data/OptometristData";
 
-const TopDoctors = () => {
+const Specialists = () => {
   const docs = docsData.map((doc) => {
     return (
-      <DocCard
+      <SpecialistCard
         key={doc.id}
         id={doc.id}
         img={doc.img}
         name={doc.name}
+        profession={doc.profession}
         specialization={doc.specialization}
         addr={doc.addr}
       />
     );
   })
   const optometrists = OptometristData.map((optometrist) => {
-    return (<DocCard
+    return (<SpecialistCard
       key={optometrist.id}
+      profession='opto'
       id={optometrist.id}
       img={optometrist.img}
       name={optometrist.name}
@@ -32,7 +34,7 @@ const TopDoctors = () => {
         <input
           className={styles.searchDocInput}
           name='search doctor'
-          placeholder='Search Doctor'
+          placeholder='Search Specialist'
         />
         <img
           className={styles.searchIcon}
@@ -42,25 +44,27 @@ const TopDoctors = () => {
       <div className={styles.categoriesContainer}>
         <b className={styles.categoriesHeading}>Categories</b>
         <div className={styles.categories}>
-          <img
-            className={styles.categoryIcons}
-            src="/images/SearchDoctor/tooth.svg"
-          />
-          <img
-            className={styles.categoryIcons}
-            style={{ backgroundColor: '#ffb167' }}
-            src="/images/SearchDoctor/heartBeat.svg"
-          />
-          <img
-            className={styles.categoryIcons}
-            style={{ backgroundColor: 'blue' }}
-            src="/images/SearchDoctor/tooth.svg"
-          />
-          <img
-            className={styles.categoryIcons}
-            style={{ backgroundColor: '#ffb167' }}
-            src="/images/SearchDoctor/heartBeat.svg"
-          />
+          <div className={styles.categoryCard}>
+            <img
+              className={styles.categoryIcons}
+              src="/images/SearchDoctor/CategoriesImgs/MGD.webp"
+            />
+            <div>MG Dysfunction</div>
+          </div>
+          <div className={styles.categoryCard}>
+            <img
+              className={styles.categoryIcons}
+              src="/images/SearchDoctor/CategoriesImgs/Aqueous_Deficiency.webp"
+            />
+            <div>Aqueous Deficiency</div>
+          </div>
+          <div className={styles.categoryCard}>
+            <img
+              className={styles.categoryIcons}
+              src="/images/SearchDoctor/CategoriesImgs/mixed.jpeg"
+            />
+            <div>Mixed</div>
+          </div>
           <div className={styles.dummyDiv} />
         </div>
       </div>
@@ -78,4 +82,4 @@ const TopDoctors = () => {
   );
 };
 
-export default TopDoctors;
+export default Specialists;

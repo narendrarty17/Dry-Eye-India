@@ -8,7 +8,7 @@ const cardsData = [
         'cardName': 'Search Doctor',
         'cardContent': 'Choose the dry eye specialist near to your place',
         'cardImg': '/images/LandingPage/servicesIcons/SearchDoc.svg',
-        'cardURL': '/doclist'
+        'cardURL': '/specialistlist'
     },
     {
         'cardName': 'Self Diagnosis',

@@ -1,18 +1,21 @@
 import { useParams } from 'react-router-dom';
-import styles from './DocProfileCard.module.css';
-import docsData from './DocsData';
+import styles from './SpecialistProfileCard.module.css';
+import docsData from './Data/DocsData';
+import optosData from './Data/OptometristData';
 
-const DocProfileCard = () => {
-    const { docId } = useParams();
+const SpecialistProfileCard = () => {
+    const { id, profession } = useParams();
+
     const date = new Date();
     const month = date.toLocaleString(undefined, { month: 'short' });
     const dateNo = date.getDate();
 
-    // Find the doctor data based on the docId
-    const selectedDoc = docsData.find((doc) => {
-        return parseInt(doc.id) == parseInt(docId)
+    // Finding the specialist based on id passed
+    const searchArray = profession == 'doc' ? docsData : optosData;
+    const selected = searchArray.find((doc) => {
+        return parseInt(doc.id) == parseInt(id)
     })
-    const appointmentDetails = selectedDoc.otherDetails.map((detail) => {
+    const appointmentDetails = selected.otherDetails.map((detail) => {
         return (
             <div
                 key={detail.detailName}
@@ -34,16 +37,16 @@ const DocProfileCard = () => {
         <div className={styles.container}>
             <div className={styles.part1}>
                 <div className={styles.header}>
-                    <img className={styles.drPic} alt="" src={selectedDoc.img} />
+                    <img className={styles.drPic} alt="" src={selected.img} />
                     <div className={styles.drDetail}>
                         <div>
                             <div className={styles.drName}>
-                                {selectedDoc.name}
+                                {selected.name}
                             </div>
                             <div className={styles.drSpecialityAndHospital}>
-                                {selectedDoc.specialization}
+                                {selected.specialization}
                                 <br />
-                                {selectedDoc.addr}
+                                {selected.addr}
                             </div>
                         </div>
                         <div className={styles.drContactMediaIcons}>
@@ -57,7 +60,7 @@ const DocProfileCard = () => {
                 <div className={styles.about}>
                     <b className={styles.aboutHeading}>About Doctor</b>
                     <div className={styles.aboutContent}>
-                        {selectedDoc.about}
+                        {selected.about}
                     </div>
                 </div>
             </div>
@@ -70,4 +73,4 @@ const DocProfileCard = () => {
         </div >
     );
 }
-export default DocProfileCard;
+export default SpecialistProfileCard;
