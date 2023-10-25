@@ -14,7 +14,6 @@ import Results from "./pages/Results";
 import ProductPage from "./pages/ProductPage";
 import DocList from "./pages/DocList";
 import SpecialistProfile from "./pages/SpecialistProfile";
-import Welcome from "./components/Diagnosis/Welcome";
 
 function App() {
   const action = useNavigationType();
