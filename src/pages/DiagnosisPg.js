@@ -24,7 +24,10 @@ const Splash = () => {
             <span>to know what kind of dry eye </span>
             <span>you have, and How to manage it.</span>
           </div>
-          <button className={styles.letsStarted}>
+          <button
+            className={styles.letsStarted}
+            onClick={() => navigate('/questions')}
+          >
             Let's Started
           </button>
         </div>
