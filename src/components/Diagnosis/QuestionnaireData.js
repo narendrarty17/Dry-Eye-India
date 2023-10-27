@@ -13,9 +13,20 @@ export const OSDIQuestions = [
     'How often you fell uncomfortable in air conditioned environment?'
 ];
 export const OSDIOptions = [
-    'All of the time',
-    'Most of the time',
-    'Half of the time',
-    'Some of the time',
-    'None of the time'
+    {
+        optionTxt: 'All of the time',
+        value: 4
+    },
+    {
+        optionTxt: 'Most of the time',
+        value: 3
+    },
+    {
+        optionTxt: 'Some of the time',
+        value: 2
+    },
+    {
+        optionTxt: 'None of the time',
+        value: 1
+    }
 ];

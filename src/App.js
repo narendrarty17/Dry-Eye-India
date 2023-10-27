@@ -62,7 +62,7 @@ function App() {
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
       <Route path="/questions" element={<Questions />} />
-      <Route path="/results" element={<Results />} />
+      <Route path="/results/:osdiValue" element={<Results />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/specialistlist" element={<DocList />} />
       <Route path="/specialistprofile/:id/profession/:profession" element={<SpecialistProfile />} />

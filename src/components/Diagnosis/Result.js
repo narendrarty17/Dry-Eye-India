@@ -1,6 +1,6 @@
 import styles from "./Result.module.css";
 
-const RiskAssessment = () => {
+const RiskAssessment = ({ osdiValue }) => {
   return (
     <div className={styles.result}>
       <div className={styles.topHeader}>
@@ -18,7 +18,7 @@ const RiskAssessment = () => {
         </div>
       </div>
       <div className={styles.stats}>
-        <div className={styles.statsHeader}>Your lung cancer risk: 0.4 %</div>
+        <div className={styles.statsHeader}>Your OSDI Score is : {osdiValue}</div>
         <div className={styles.mainContentStats}>
           <img className={styles.statPieIcon} alt="" src="/images/SelfDiagnosis/Result/pieChart.svg" />
           <div className={styles.bulletPoints}>

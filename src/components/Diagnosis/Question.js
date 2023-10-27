@@ -1,26 +1,39 @@
+import { useEffect, useState } from 'react';
 import styles from './Question.module.css';
 import { useNavigate } from 'react-router-dom';
+import { OSDIQuestions } from './QuestionnaireData';
 
 const Question = ({ sNo, question, options, nextBtnHandler, previousBtnHandler }) => {
     const navigate = useNavigate();
+    const [radioValue, setRadioValue] = useState(null);
+    useEffect(() => {
+        if (radioValue === null) console.log('No btn radio checked');
+        else console.log('Opted radioValue: ', radioValue);
+    }, [radioValue])
     let i = -1;
     const alternatives = options.map((option) => {
         i++;
         return (
-            <div key={i} className={styles.option}>
+            <div
+                key={i}
+                className={styles.option}
+            >
                 <input
                     className={styles.checkbox}
-                    type="checkbox"
-                    name="option1"
+                    type="radio"
+                    checked={option.value == radioValue}
+                    onChange={() => {
+                        setRadioValue(option.value)
+                    }}
                 />
-                <label>{option}</label>
+                <label>{option.optionTxt}</label>
             </div>
         );
     })
     return (
         <div className={styles.container}>
             <div className={styles.question}>
-                <div className={styles.questionLabel}>Question {sNo}/9</div>
+                <div className={styles.questionLabel}>Question {sNo}/{OSDIQuestions.length}</div>
                 <div className={styles.questionMain}>
                     <div className={styles.questionTxt}>
                         {question}
@@ -38,7 +51,11 @@ const Question = ({ sNo, question, options, nextBtnHandler, previousBtnHandler }
                     </button>
                     <button
                         className={styles.next}
-                        onClick={nextBtnHandler}
+                        disabled={!radioValue}
+                        onClick={() => {
+                            nextBtnHandler(radioValue);
+                            setRadioValue(null);
+                        }}
                     >
                         Next
                     </button>
