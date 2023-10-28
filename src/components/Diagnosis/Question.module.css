@@ -64,3 +64,8 @@
   background-color: #0f66cc;
   color: white;
 }
+@media (max-width: 600px) {
+  .question {
+    width: 375px;
+  }
+}
