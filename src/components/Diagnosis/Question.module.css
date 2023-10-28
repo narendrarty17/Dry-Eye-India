@@ -56,13 +56,17 @@
   border-radius: 5px;
   border: 2px solid #6a6a6a;
 }
-.next {
+.next,
+.nextInactive {
   font-size: 1.2rem;
   padding: 10px 15px;
   border-radius: 5px;
   border: 0;
   background-color: #0f66cc;
   color: white;
+}
+.nextInactive {
+  background-color: #95c0f1;
 }
 @media (max-width: 600px) {
   .question {

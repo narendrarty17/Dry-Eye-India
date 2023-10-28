@@ -6,9 +6,17 @@ import { OSDIQuestions } from './QuestionnaireData';
 const Question = ({ sNo, question, options, nextBtnHandler, previousBtnHandler }) => {
     const navigate = useNavigate();
     const [radioValue, setRadioValue] = useState(null);
+    const btnInactiveColor = '#8bb9f7';
+    const btnActiveColor = '#0f66cc';
+    const [nextBtnColor, setNextBtnColor] = useState(btnInactiveColor);
     useEffect(() => {
-        if (radioValue === null) console.log('No btn radio checked');
-        else console.log('Opted radioValue: ', radioValue);
+        if (radioValue === null) {
+            console.log('No btn radio checked');
+            setNextBtnColor(btnInactiveColor);
+        } else {
+            console.log('Opted radioValue: ', radioValue);
+            setNextBtnColor(btnActiveColor);
+        }
     }, [radioValue])
     let i = -1;
     const alternatives = options.map((option) => {
@@ -51,6 +59,7 @@ const Question = ({ sNo, question, options, nextBtnHandler, previousBtnHandler }
                     </button>
                     <button
                         className={styles.next}
+                        style={{ backgroundColor: `${nextBtnColor}` }}
                         disabled={!radioValue}
                         onClick={() => {
                             nextBtnHandler(radioValue);
