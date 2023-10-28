@@ -9,8 +9,6 @@ import ConsultToday from "./pages/ConsultToday";
 import { useEffect } from "react";
 import BlogPost from "./pages/BlogPost";
 import DiagnosisPg from './pages/DiagnosisPg';
-import Questions from "./pages/Questions";
-import Results from "./pages/Results";
 import ProductPage from "./pages/ProductPage";
 import DocList from "./pages/DocList";
 import SpecialistProfile from "./pages/SpecialistProfile";
@@ -61,8 +59,6 @@ function App() {
       <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<DiagnosisPg />} />
-      <Route path="/questions" element={<Questions />} />
-      <Route path="/results/:osdiValue" element={<Results />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/specialistlist" element={<DocList />} />
       <Route path="/specialistprofile/:id/profession/:profession" element={<SpecialistProfile />} />

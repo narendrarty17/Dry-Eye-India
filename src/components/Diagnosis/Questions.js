@@ -1,10 +1,10 @@
 import { useNavigate } from 'react-router-dom';
-import Header from "../components/CommonComp/Header";
-import Footer from "../components/CommonComp/Footer";
-import Question from '../components/Diagnosis/Question';
-import { OSDIQuestions, OSDIOptions } from "../components/Diagnosis/QuestionnaireData";
+import Header from "../CommonComp/Header";
+import Footer from "../CommonComp/Footer";
+import Question from './Question';
+import { OSDIQuestions, OSDIOptions } from "./QuestionnaireData";
 import { useEffect, useState } from 'react';
-import ResultFirst from '../components/Diagnosis/ResultFirst';
+import ResultFirst from './ResultFirst';
 
 const Questions = () => {
     const navigate = useNavigate();
@@ -33,7 +33,6 @@ const Questions = () => {
     }
     return (
         <div>
-            <Header />
             {count < OSDIQuestions.length ?
                 <Question sNo={count + 1}
                     question={OSDIQuestions[count]}
@@ -42,9 +41,8 @@ const Questions = () => {
                     previousBtnHandler={previousBtnHandler}
                 />
                 :
-                <ResultFirst />
+                <ResultFirst osdiScore={osdiVal} />
             }
-            <Footer />
         </div>
     );
 }
