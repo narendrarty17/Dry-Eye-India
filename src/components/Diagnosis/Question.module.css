@@ -67,5 +67,6 @@
 @media (max-width: 600px) {
   .question {
     width: 375px;
+    height: 330px;
   }
 }
