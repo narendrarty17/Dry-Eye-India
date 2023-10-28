@@ -1,20 +1,23 @@
 .container {
-  margin-top: 60px;
-  margin-bottom: 300px;
-  padding: 0 30px;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   font-family: Mulish;
+  background-color: #efefef;
+  height: 80vh;
 }
 .question {
   display: flex;
   flex-direction: column;
   gap: 25px;
   padding: 20px;
-  width: 400px;
-  height: 280px;
-  background-color: yellow;
+  width: 450px;
+  height: 300px;
+  border-radius: 5px;
+  border: 1px solid #d3e1f7;
+  box-sizing: border-box;
+  background-color: white;
 }
 .questionLabel {
   color: #0f66cc;

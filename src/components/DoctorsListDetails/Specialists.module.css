@@ -10,6 +10,7 @@
   font-size: var(--body-body-compact-02-size);
   color: var(--color-midnightblue-100);
   font-family: var(--font-circular-std);
+  margin-bottom: 100px;
 }
 .searchBar {
   position: relative;
