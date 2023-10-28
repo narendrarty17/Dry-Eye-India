@@ -1,0 +1,64 @@
+.resultCardContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  background-color: #efefef;
+  font-family: Mulish;
+}
+.resultCard {
+  width: 316px;
+  height: 450px;
+  box-sizing: border-box;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  background-color: white;
+}
+.mainContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.titleImg {
+  margin-top: 30px;
+  width: 87px;
+  height: 87px;
+}
+.titleTxt {
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.contentTxt {
+  width: 250px;
+  text-align: center;
+  line-height: 130%;
+  font-size: 1rem;
+  color: #606268;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.allowBtn,
+.skipBtn {
+  width: 250px;
+  height: 44px;
+  border-radius: 50px;
+  border: none;
+  font-size: 1.1rem;
+}
+.allowBtn {
+  color: white;
+  background-color: #f56539;
+}
+.skipBtn {
+  background-color: white;
+  color: #f58229;
+  border: 1px solid #f58229;
+}

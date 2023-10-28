@@ -4,6 +4,7 @@ import Footer from "../components/CommonComp/Footer";
 import Question from '../components/Diagnosis/Question';
 import { OSDIQuestions, OSDIOptions } from "../components/Diagnosis/QuestionnaireData";
 import { useEffect, useState } from 'react';
+import ResultFirst from '../components/Diagnosis/ResultFirst';
 
 const Questions = () => {
     const navigate = useNavigate();
@@ -14,7 +15,7 @@ const Questions = () => {
         console.log('temp result: ', osdiVal);
         console.log('count:', count);
         if (count >= OSDIQuestions.length) {
-            navigate(`/results/${osdiVal}`);
+            // navigate(`/results/${osdiVal}`);
         }
     }, [osdiVal]);
     const nextBtnHandler = (radioValue) => {
@@ -24,7 +25,7 @@ const Questions = () => {
     }
     const previousBtnHandler = () => {
         if (count == 0) {
-            navigate('/diagnosis')
+            navigate('/diagnosis');
         } else {
             setCount((prevCount) => prevCount - 1)
             setOsdiVal((prevOsdiVal) => prevOsdiVal - prevRadioVal);
@@ -33,13 +34,16 @@ const Questions = () => {
     return (
         <div>
             <Header />
-            <Question
-                sNo={count + 1}
-                question={OSDIQuestions[count]}
-                options={OSDIOptions}
-                nextBtnHandler={nextBtnHandler}
-                previousBtnHandler={previousBtnHandler}
-            />
+            {count < OSDIQuestions.length ?
+                <Question sNo={count + 1}
+                    question={OSDIQuestions[count]}
+                    options={OSDIOptions}
+                    nextBtnHandler={nextBtnHandler}
+                    previousBtnHandler={previousBtnHandler}
+                />
+                :
+                <ResultFirst />
+            }
             <Footer />
         </div>
     );
