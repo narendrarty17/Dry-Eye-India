@@ -20,6 +20,7 @@ ul {
   gap: 20px;
   align-items: center;
   width: 343px;
+  height: 46px;
 }
 .searchbar {
   width: 263px;
