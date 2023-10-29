@@ -30,15 +30,15 @@ const Products = () => {
                 </div>
                 <div className={styles.promotionContainer}>
                     <div className={styles.promotionImg}>
-                        <h2 className={styles.promotionImgTxt}>
+                        <h1 className={styles.promotionImgTxt}>
                             Super Flash Sale<br />
                             50% off
-                        </h2>
-                        <h4 className={styles.promotionCountDown}>
+                        </h1>
+                        <h3 className={styles.promotionCountDown}>
                             <div className={styles.countDownBox}>08</div>
                             <div className={styles.countDownBox}>34</div>
                             <div className={styles.countDownBox}>52</div>
-                        </h4>
+                        </h3>
                     </div>
                     <ul className={styles.sliderIcons}>
                         <li className={styles.sliderIcon} />
@@ -47,6 +47,12 @@ const Products = () => {
                         <li className={styles.sliderIcon} />
                         <li className={styles.sliderIcon} />
                     </ul>
+                </div>
+                <div className={styles.category}>
+                    <div className={styles.categoryHeader}>
+                        <h3 className={styles.categoryLeftHeading}>Category</h3>
+                        <h3 className={styles.categoryRightHeading}>More Category</h3>
+                    </div>
                 </div>
             </div>
         </div>

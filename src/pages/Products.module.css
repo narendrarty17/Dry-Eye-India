@@ -48,12 +48,12 @@
   align-items: center;
 }
 .promotionImg {
+  width: 343px;
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  padding-left: 20px;
   box-sizing: border-box;
-  width: 343px;
-  height: 206px;
+  border-radius: 5px;
   background-image: url("../../public/images/Products/promotionImg.png");
 }
 .promotionImgTxt {
@@ -73,7 +73,7 @@
   align-items: center;
 }
 .sliderIcons {
-  margin-top: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   width: 100px;
@@ -90,3 +90,20 @@
   font-size: 25px;
 }
 /* Promotion images section ends here */
+
+/* Category starts here */
+.category {
+  width: 343px;
+  display: flex;
+  flex-direction: column;
+}
+.categoryHeader {
+  display: flex;
+  justify-content: space-between;
+}
+.categoryLeftHeading,
+.categoryRightHeading {
+  margin: 0;
+}
+.categoryRightHeading {
+}
