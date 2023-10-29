@@ -164,6 +164,7 @@ ul {
 
 /* Product Card starts here */
 .productCards {
+  margin-bottom: 30px;
   display: flex;
   gap: 20px;
 }
