@@ -1,14 +1,10 @@
-import { useNavigate } from 'react-router-dom';
 import styles from './SpecialistCard.module.css';
 
-const SpecialistCard = ({ name, specialization, addr, id, img, profession, backgroundColor }) => {
-  const navigate = useNavigate();
-  const navigatePath = `/specialistprofile/${id}/profession/${profession}`;
-  console.log(backgroundColor);
+const SpecialistCard = ({ name, specialization, addr, id, img, profession, backgroundColor, specialistCardClick }) => {
   return (
     <div
       className={styles.docCard}
-      onClick={() => navigate(navigatePath)}
+      onClick={() => specialistCardClick(id, profession)}
       style={{ backgroundColor: `${backgroundColor}` }}
     >
       <img className={styles.docImg} alt="" src={img} />

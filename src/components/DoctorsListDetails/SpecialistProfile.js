@@ -1,11 +1,10 @@
 import { useParams } from 'react-router-dom';
-import styles from './SpecialistProfileCard.module.css';
+import styles from './SpecialistProfile.module.css';
 import docsData from './Data/DocsData';
 import optosData from './Data/OptometristData';
 
-const SpecialistProfileCard = () => {
-    const { id, profession } = useParams();
-
+const SpecialistProfileCard = ({ id, profession }) => {
+    console.log()
     const date = new Date();
     const month = date.toLocaleString(undefined, { month: 'short' });
     const dateNo = date.getDate();

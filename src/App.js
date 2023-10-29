@@ -4,14 +4,13 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
+import { useEffect } from "react";
 import LandingPgCopy from "./pages/LandingPage";
 import ConsultToday from "./pages/ConsultToday";
-import { useEffect } from "react";
 import BlogPost from "./pages/BlogPost";
-import DiagnosisPg from './pages/DiagnosisPg';
+import SelfDiagnosis from './pages/SelfDiagnosis';
 import ProductPage from "./pages/ProductPage";
-import DocList from "./pages/DocList";
-import SpecialistProfile from "./pages/SpecialistProfile";
+import SearchDoc from "./pages/SearchDoc";
 
 function App() {
   const action = useNavigationType();
@@ -58,10 +57,9 @@ function App() {
       <Route path="/" element={<LandingPgCopy />} />
       <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
-      <Route path="/diagnosis" element={<DiagnosisPg />} />
+      <Route path="/diagnosis" element={<SelfDiagnosis />} />
       <Route path="/product" element={<ProductPage />} />
-      <Route path="/specialistlist" element={<DocList />} />
-      <Route path="/specialistprofile/:id/profession/:profession" element={<SpecialistProfile />} />
+      <Route path="/searchdoc" element={<SearchDoc />} />
     </Routes>
   );
 }

@@ -67,6 +67,9 @@
   height: 96px;
   border-radius: 15px;
 }
+.dummyDiv {
+  width: 80px;
+}
 .cardLists {
   display: flex;
   flex-direction: row;
@@ -77,9 +80,6 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
-}
-.dummyDiv {
-  width: 80px;
 }
 @media (max-width: 600px) {
   .categoryCardLast {
