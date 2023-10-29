@@ -1,3 +1,11 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+}
 .container {
   margin-top: 20px;
   display: flex;
@@ -49,9 +57,12 @@
 }
 .promotionImg {
   width: 343px;
+  height: 206px;
   display: flex;
   flex-direction: column;
-  padding-left: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  gap: 30px;
   box-sizing: border-box;
   border-radius: 5px;
   background-image: url("../../public/images/Products/promotionImg.png");
