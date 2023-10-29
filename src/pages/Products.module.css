@@ -3,15 +3,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
 }
+
+/* topbar(includes searchbar and side icons) starts here */
 .topbar {
   display: flex;
-  gap: 30px;
-  width: 375px;
+  gap: 20px;
+  align-items: center;
+  width: 343px;
 }
 .searchbar {
   width: 263px;
-  height: 40px;
+  height: 46px;
   position: relative;
 }
 .searchIcon {
@@ -32,3 +36,57 @@
   font-size: 0.8rem;
   color: #9098b1;
 }
+.topbarSideIcon {
+  width: 20px;
+}
+/* topbar ends here */
+
+/* promotion images sections starts here */
+.promotionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.promotionImg {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-sizing: border-box;
+  width: 343px;
+  height: 206px;
+  background-image: url("../../public/images/Products/promotionImg.png");
+}
+.promotionImgTxt {
+  color: white;
+}
+.promotionCountDown {
+  display: flex;
+  gap: 10px;
+}
+.countDownBox {
+  width: 42px;
+  height: 41px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sliderIcons {
+  margin-top: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+.sliderIcon,
+.sliderIconSelected {
+  width: 20px;
+  color: #ebf0ff;
+}
+.sliderIconSelected {
+  color: #40bfff;
+}
+.sliderIcons li::marker {
+  font-size: 25px;
+}
+/* Promotion images section ends here */
