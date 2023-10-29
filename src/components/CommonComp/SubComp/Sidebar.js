@@ -47,7 +47,7 @@ const Sidebar = (props) => {
             />
             <div
               className={styles.linkLabel}
-              onClick={() => navigate('/consult')}
+              onClick={() => navigate('/login')}
             >
               Log in</div>
             <img className={styles.iconMore} alt="" src="/images/Header/sideBar/dropDownClosed.svg" />
@@ -77,7 +77,7 @@ const Sidebar = (props) => {
           </div>
           <div
             className={styles.link}
-            onClick={() => navigate('/consult')}
+            onClick={() => navigate('/searchdoc')}
           >
             <img
               className={styles.linkIcon}

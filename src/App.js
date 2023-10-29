@@ -6,12 +6,12 @@ import {
 } from "react-router-dom";
 import { useEffect } from "react";
 import LandingPgCopy from "./pages/LandingPage";
-import ConsultToday from "./pages/ConsultToday";
 import BlogPost from "./pages/BlogPost";
 import SelfDiagnosis from './pages/SelfDiagnosis';
 import ProductPage from "./pages/ProductPage";
 import SearchDoc from "./pages/SearchDoc";
 import Products from "./pages/Products";
+import Login from "./pages/Login";
 
 function App() {
   const action = useNavigationType();
@@ -56,12 +56,12 @@ function App() {
   return (
     <Routes>
       <Route path="/" element={<LandingPgCopy />} />
-      <Route path="/consult" element={<ConsultToday />} />
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<SelfDiagnosis />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/searchdoc" element={<SearchDoc />} />
       <Route path="/products" element={<Products />} />
+      <Route path="/login" element={<Login />} />
     </Routes>
   );
 }
