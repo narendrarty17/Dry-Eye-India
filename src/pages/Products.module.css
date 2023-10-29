@@ -166,6 +166,7 @@ ul {
 .productCards {
   margin-bottom: 30px;
   display: flex;
+  flex-wrap: wrap;
   gap: 20px;
 }
 .productCard {

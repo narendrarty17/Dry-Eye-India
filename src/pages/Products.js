@@ -134,6 +134,42 @@ const Products = () => {
                                 </div>
                             </div>
                         </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
