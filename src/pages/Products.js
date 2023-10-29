@@ -48,10 +48,10 @@ const Products = () => {
                         <li className={styles.sliderIcon} />
                     </ul>
                 </div>
-                <div className={styles.categoryContainer}>
-                    <div className={styles.categoryHeader}>
-                        <h4 className={styles.categoryLeftHeading}>Category</h4>
-                        <h4 className={styles.categoryRightHeading}>More Category</h4>
+                <div className={styles.sectionContainer}>
+                    <div className={styles.sectionHeader}>
+                        <h4 className={styles.sectionLeftHeading}>Category</h4>
+                        <h4 className={styles.sectionRightHeading}>More Category</h4>
                     </div>
                     <div className={styles.categories}>
                         <div className={styles.category}>
@@ -92,7 +92,52 @@ const Products = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.sectionContainer}>
+                    <div className={styles.sectionHeader}>
+                        <h4 className={styles.sectionLeftHeading}>Flash Sale</h4>
+                        <h4 className={styles.sectionRightHeading}>See More</h4>
+                    </div>
+                    <div className={styles.productCards}>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/bag.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>FS-Nike Air Max 270</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <Footer />
         </div>
     );
 }
