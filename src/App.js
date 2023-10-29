@@ -11,6 +11,7 @@ import BlogPost from "./pages/BlogPost";
 import SelfDiagnosis from './pages/SelfDiagnosis';
 import ProductPage from "./pages/ProductPage";
 import SearchDoc from "./pages/SearchDoc";
+import Products from "./pages/Products";
 
 function App() {
   const action = useNavigationType();
@@ -60,6 +61,7 @@ function App() {
       <Route path="/diagnosis" element={<SelfDiagnosis />} />
       <Route path="/product" element={<ProductPage />} />
       <Route path="/searchdoc" element={<SearchDoc />} />
+      <Route path="/products" element={<Products />} />
     </Routes>
   );
 }

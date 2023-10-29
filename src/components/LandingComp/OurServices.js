@@ -20,7 +20,7 @@ const cardsData = [
         'cardName': 'Our Products',
         'cardContent': 'Our products are uniquely designed for Indian Dry Eye Patients',
         'cardImg': '/images/LandingPage/servicesIcons/EmergencyCare.svg',
-        'cardURL': '/product'
+        'cardURL': '/products'
     }
 ]
 

@@ -1,11 +1,11 @@
 import Header from "../components/CommonComp/Header";
 import Footer from "../components/CommonComp/Footer";
 import { useState } from "react";
-import SpecialistCard from "../components/DoctorsListDetails/SubComp/SpecialistCard";
-import SpecialistProfile from '../components/DoctorsListDetails/SpecialistProfile';
-import docsData from "../components/DoctorsListDetails/Data/DocsData";
-import OptometristData from "../components/DoctorsListDetails/Data/OptometristData";
-import DocListPg from "../components/DoctorsListDetails/DocListPg";
+import SpecialistCard from "../components/SearchDoc/SubComp/SpecialistCard";
+import SpecialistProfile from '../components/SearchDoc/SpecialistProfile';
+import docsData from "../components/SearchDoc/Data/DocsData";
+import OptometristData from "../components/SearchDoc/Data/OptometristData";
+import DocListPg from "../components/SearchDoc/DocListPg";
 
 const SearchDoc = () => {
     const [showProfile, setShowProfile] = useState(false);

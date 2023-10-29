@@ -12,7 +12,7 @@ const headerLinks = [
   },
   {
     'linkText': 'Find a doctor',
-    'linkURL': '/doclist',
+    'linkURL': '/searchdoc',
     'linkId': 1
   },
   {
@@ -27,7 +27,7 @@ const headerLinks = [
   },
   {
     'linkText': 'Our Products',
-    'linkURL': '/product',
+    'linkURL': '/products',
     'linkId': 4
   }
 

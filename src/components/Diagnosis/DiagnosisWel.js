@@ -22,11 +22,11 @@ const DiagnosisWel = ({ startClickHandler }) => {
             </div>
             <img
                 className={styles.welcomeIconMobile}
-                src="images/SearchDoctor/welcome.png"
+                src="images/SelfDiagnosis/LetsStart/welcome.png"
             />
             <img
                 className={styles.welcomeIconDesktop}
-                src="images/SearchDoctor/diagnosis_desktop.jpeg"
+                src="images/SelfDiagnosis/LetsStart/diagnosis_desktop.jpeg"
             />
         </div>
     )

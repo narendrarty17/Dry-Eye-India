@@ -1,6 +1,4 @@
 import { useNavigate } from 'react-router-dom';
-import Header from "../CommonComp/Header";
-import Footer from "../CommonComp/Footer";
 import Question from './Question';
 import { OSDIQuestions, OSDIOptions } from "./QuestionnaireData";
 import { useEffect, useState } from 'react';
