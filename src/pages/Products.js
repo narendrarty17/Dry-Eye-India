@@ -61,7 +61,7 @@ const Products = () => {
                                     src="images/Products/categoryIcons/shirt.svg"
                                 />
                             </div>
-                            <div className={styles.categoryName}>Man Shirt</div>
+                            <div className={styles.categoryName}>Shirt</div>
                         </div>
                         <div className={styles.category}>
                             <div className={styles.categoryIconContainer}>
