@@ -28,16 +28,16 @@ const Products = () => {
                         src="/images/Products/topbar/notification.svg"
                     />
                 </div>
-                <div className={styles.promotionContainer}>
-                    <div className={styles.promotionImg}>
-                        <h2 className={styles.promotionImgTxt}>
+                <div className={styles.flashCardContainer}>
+                    <div className={styles.flashImgPromotion}>
+                        <h2 className={styles.flashImgHeaderTxt}>
                             Super Flash Sale<br />
                             50% off
                         </h2>
-                        <h4 className={styles.promotionCountDown}>
-                            <div className={styles.countDownBox}>08</div>
-                            <div className={styles.countDownBox}>34</div>
-                            <div className={styles.countDownBox}>52</div>
+                        <h4 className={styles.flashImgCountDown}>
+                            <div className={styles.flashImgCountDownBox}>08</div>
+                            <div className={styles.flashImgCountDownBox}>34</div>
+                            <div className={styles.flashImgCountDownBox}>52</div>
                         </h4>
                     </div>
                     <ul className={styles.sliderIcons}>
@@ -97,6 +97,93 @@ const Products = () => {
                         <h4 className={styles.sectionLeftHeading}>Flash Sale</h4>
                         <h4 className={styles.sectionRightHeading}>See More</h4>
                     </div>
+                    <div className={styles.productCards}>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/bag.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>FS-Nike Air Max 270</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro ultra max...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro ultra max...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className={styles.productCard}>
+                            <img
+                                className={styles.productImg}
+                                src="images/Products/productImgs/wallet.png"
+                            />
+                            <div className={styles.productDetails}>
+                                <div className={styles.productName}>
+                                    <b>MS-Nike Air Pro ultra max...</b>
+                                </div>
+                                <div className={styles.productPrice}>
+                                    $299.43
+                                </div>
+                                <div className={styles.productDiscountContainer}>
+                                    <div className={styles.previousPrice}>$534</div>
+                                    <div className={styles.productDiscount}>24% off</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.flashCardContainer}>
+                    <div className={styles.flashImgRecommend}>
+                        <h2 className={styles.flashImgHeaderTxt}>
+                            Recommended<br />
+                            Product
+                        </h2>
+                        <div className={styles.flashImgTxt}>
+                            We recommend the best for you
+                        </div>
+                    </div>
+                </div>
+                <div className={styles.sectionContainer}>
                     <div className={styles.productCards}>
                         <div className={styles.productCard}>
                             <img

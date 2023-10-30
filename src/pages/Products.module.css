@@ -8,6 +8,7 @@ ul {
 }
 .container {
   margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -53,13 +54,14 @@ ul {
 }
 /* topbar ends here */
 
-/* promotion images sections starts here */
-.promotionContainer {
+/* flash images sections starts here */
+.flashCardContainer {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.promotionImg {
+.flashImgPromotion,
+.flashImgRecommend {
   width: 343px;
   height: 206px;
   display: flex;
@@ -71,17 +73,24 @@ ul {
   border-radius: 5px;
   background-image: url("../../public/images/Products/promotionImg.png");
 }
-.promotionImgTxt {
+.flashImgRecommend {
+  background-image: url("../../public/images/Products/recommendedBanner.png");
+}
+.flashImgHeaderTxt {
   font-family: Poppins;
   color: white;
   line-height: 150%;
 }
-.promotionCountDown {
+.flashImgTxt {
+  color: white;
+  font-size: 0.9rem;
+}
+.flashImgCountDown {
   display: flex;
   gap: 10px;
   font-family: Poppins;
 }
-.countDownBox {
+.flashImgCountDownBox {
   width: 42px;
   height: 41px;
   background-color: white;
@@ -90,6 +99,7 @@ ul {
   justify-content: center;
   align-items: center;
 }
+/* Slider button inside flash img starts here */
 .sliderIcons {
   margin: 0;
   display: flex;
@@ -107,7 +117,8 @@ ul {
 .sliderIcons li::marker {
   font-size: 25px;
 }
-/* Promotion images section ends here */
+/* Slider button inside flash img ends here */
+/* flash images sections starts here */
 
 /* Generic Section Starts Here (common in the page) */
 .sectionContainer {
@@ -168,7 +179,6 @@ ul {
 
 /* Product Card starts here */
 .productCards {
-  margin-bottom: 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -218,3 +228,10 @@ ul {
   color: #fb7181;
 }
 /* Product Card ends here */
+
+/* Recommended Banner Starts Here */
+.recommendedBanner {
+  width: 343px;
+  height: 206px;
+  background-image: url("../../public/images/Products/recommendedBanner.png");
+}
