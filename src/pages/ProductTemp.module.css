@@ -36,7 +36,7 @@
   display: flex;
   gap: 10px;
   align-items: center;
-  height: 20px;
+  height: 25px;
 }
 .slidingIcon,
 .slidingIconSelected {
@@ -66,4 +66,16 @@
   margin-top: 5px;
   font-family: Poppins;
   color: #40bfff;
+}
+
+@media (min-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .productImg {
+    width: 375px;
+  }
+  .topBar {
+    width: 375px;
+  }
 }
