@@ -72,12 +72,14 @@ ul {
   background-image: url("../../public/images/Products/promotionImg.png");
 }
 .promotionImgTxt {
+  font-family: Poppins;
   color: white;
   line-height: 150%;
 }
 .promotionCountDown {
   display: flex;
   gap: 10px;
+  font-family: Poppins;
 }
 .countDownBox {
   width: 42px;
@@ -119,6 +121,7 @@ ul {
   justify-content: space-between;
   letter-spacing: 0.5px;
   line-height: 150%;
+  font-family: Poppins;
 }
 .sectionLeftHeading,
 .sectionRightHeading {
