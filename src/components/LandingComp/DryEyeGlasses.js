@@ -30,7 +30,7 @@ const DryEyeGlasses = () => {
                 <br />
                 <div
                     className={styles.buttonContainer}
-                    onClick={() => navigate('/product')}>
+                    onClick={() => navigate('/producttemp')}>
                     <LearnMoreBtn />
                 </div>
             </div>

@@ -12,6 +12,7 @@ import ProductPage from "./pages/ProductPage";
 import SearchDoc from "./pages/SearchDoc";
 import Products from "./pages/Products";
 import Login from "./pages/Login";
+import ProductTemp from "./pages/ProductTemp";
 
 function App() {
   const action = useNavigationType();
@@ -62,6 +63,7 @@ function App() {
       <Route path="/searchdoc" element={<SearchDoc />} />
       <Route path="/products" element={<Products />} />
       <Route path="/login" element={<Login />} />
+      <Route path="/producttemp" element={<ProductTemp />} />
     </Routes>
   );
 }
