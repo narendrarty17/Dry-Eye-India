@@ -123,7 +123,7 @@ const Products = () => {
                             />
                             <div className={styles.productDetails}>
                                 <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro...</b>
+                                    <b>MS-Nike Air Pro ultra max...</b>
                                 </div>
                                 <div className={styles.productPrice}>
                                     $299.43
@@ -141,7 +141,7 @@ const Products = () => {
                             />
                             <div className={styles.productDetails}>
                                 <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro...</b>
+                                    <b>MS-Nike Air Pro ultra max...</b>
                                 </div>
                                 <div className={styles.productPrice}>
                                     $299.43
@@ -159,7 +159,7 @@ const Products = () => {
                             />
                             <div className={styles.productDetails}>
                                 <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro...</b>
+                                    <b>MS-Nike Air Pro ultra max...</b>
                                 </div>
                                 <div className={styles.productPrice}>
                                     $299.43

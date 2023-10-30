@@ -175,21 +175,22 @@ ul {
   gap: 8px;
   padding-top: 8px;
   align-items: center;
-  width: 141px;
-  height: 238px;
+  width: 160px;
+  height: 270px;
   box-sizing: border-box;
+  border: 1px solid black;
   border: 1px solid #ebf0ff;
   border-radius: 5px;
 }
 .productImg {
-  width: 120px;
-  height: 120px;
+  width: 140px;
+  height: 140px;
 }
 .productDetails {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 120px;
+  width: 140px;
 }
 .productName {
   line-height: 140%;
