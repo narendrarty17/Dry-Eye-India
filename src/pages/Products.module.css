@@ -13,6 +13,7 @@ ul {
   align-items: center;
   gap: 20px;
   letter-spacing: 0.5px;
+  font-family: Mulish;
 }
 
 /* topbar(includes searchbar and side icons) starts here */
@@ -168,6 +169,7 @@ ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
+  width: 343px;
 }
 .productCard {
   display: flex;
