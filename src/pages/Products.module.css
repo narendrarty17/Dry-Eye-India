@@ -206,6 +206,8 @@ ul {
   flex-direction: column;
   gap: 8px;
   width: 140px;
+  font-family: Poppins;
+  font-size: 0.9rem;
 }
 .productName {
   line-height: 140%;
@@ -222,6 +224,7 @@ ul {
 .previousPrice {
   color: #9098b1;
   text-decoration: line-through;
+  font-family: Mulish;
 }
 .productDiscount {
   font-weight: 600;
