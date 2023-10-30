@@ -24,6 +24,7 @@
 .coverPicIcon {
   width: 360px;
   height: auto;
+  border-radius: 5px;
 }
 .consultbtn {
   border-radius: 55px;
