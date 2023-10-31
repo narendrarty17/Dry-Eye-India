@@ -41,6 +41,37 @@ const AddToCart = () => {
                             </div>
                         </div>
                     </div>
+                    <div className={styles.productCard}>
+                        <img
+                            className={styles.productImg}
+                            src="images/Products/cart/cartItems/cartItem01.png"
+                        />
+                        <div className={styles.productDetails}>
+                            <div className={styles.productName}>
+                                Nike Air Zoom Pegasus 36 Miami
+                            </div>
+                            <div className={styles.productPrice}>
+                                $299.43
+                            </div>
+                        </div>
+                        <div className={styles.productIcons}>
+                            <div className={styles.likeOrDelete}>
+                                <img
+                                    className={styles.like}
+                                    src="images/Products/cart/like.svg"
+                                />
+                                <img
+                                    className={styles.delete}
+                                    src="images/Products/cart/delete.svg"
+                                />
+                            </div>
+                            <div className={styles.incOrDec}>
+                                <div className={styles.dec}>-</div>
+                                <div className={styles.count}>1</div>
+                                <div className={styles.inc}>+</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <Footer />
