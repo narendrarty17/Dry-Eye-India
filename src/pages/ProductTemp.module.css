@@ -5,6 +5,7 @@
   gap: 20px;
   width: 100%;
   letter-spacing: 0.5px;
+  font-family: Mulish;
 }
 /* Topbar starts here */
 .topBar {
@@ -144,9 +145,11 @@
 }
 .specificationContent {
   color: #909881;
+  font-size: 0.9rem;
 }
 .specificationDescParagraph {
   color: #909881;
+  font-size: 0.9rem;
 }
 /* Product Specification */
 /* Product Review starts here */
@@ -160,6 +163,7 @@
   color: #909881;
   display: inline;
   margin-left: 10px;
+  font-size: 0.9rem;
 }
 .customerReview {
   display: flex;
@@ -183,6 +187,7 @@
 }
 .reviewTxt {
   color: #909881;
+  font-size: 0.9rem;
 }
 .reviewImgs {
   display: flex;
