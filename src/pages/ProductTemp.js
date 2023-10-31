@@ -257,6 +257,9 @@ const ProductTemp = () => {
                         </div>
                     </div>
                 </div>
+                <button className={styles.addToCart}>
+                    Add To Cart
+                </button>
             </div>
             <Footer />
         </div>

@@ -6,6 +6,7 @@
   width: 100%;
   letter-spacing: 0.5px;
   font-family: Mulish;
+  margin-bottom: 30px;
 }
 /* Topbar starts here */
 .topBar {
@@ -204,7 +205,6 @@
   flex-direction: column;
   width: 375px;
   gap: 10px;
-  margin-bottom: 30px;
 }
 .productCards {
   display: flex;
@@ -243,6 +243,19 @@
 }
 .productDiscountPercentage {
   color: #fb7181;
+}
+.addToCart {
+  width: 375px;
+  height: 57px;
+  background-color: #40bfff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 5px;
 }
 /* You might also like ends here */
 @media (min-width: 600px) {
