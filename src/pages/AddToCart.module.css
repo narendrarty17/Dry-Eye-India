@@ -86,6 +86,7 @@
 .dec {
   font-size: 24px;
   width: 34px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,7 +96,7 @@
   font-size: 14px;
   background-color: #ebf0ff;
   width: 34px;
-  height: 24px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -103,6 +104,7 @@
 .inc {
   font-size: 18px;
   width: 34px;
+  height: 28px;
   display: flex;
   justify-content: center;
   align-items: center;
