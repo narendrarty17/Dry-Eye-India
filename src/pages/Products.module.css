@@ -20,13 +20,13 @@ ul {
 /* topbar(includes searchbar and side icons) starts here */
 .topbar {
   display: flex;
-  gap: 20px;
+  gap: 22px;
   align-items: center;
-  width: 343px;
+  width: 375px;
   height: 46px;
 }
 .searchbar {
-  width: 263px;
+  width: 275px;
   height: 46px;
   position: relative;
 }
@@ -37,7 +37,7 @@ ul {
   width: 18px;
 }
 .searchinput {
-  width: 263px;
+  width: 275px;
   height: 40px;
   border-radius: 5px;
   border: 1px solid #ebf0ff;
@@ -50,7 +50,7 @@ ul {
   line-height: 150%;
 }
 .topbarSideIcon {
-  width: 20px;
+  width: 25px;
 }
 /* topbar ends here */
 
@@ -62,7 +62,7 @@ ul {
 }
 .flashImgPromotion,
 .flashImgRecommend {
-  width: 343px;
+  width: 375px;
   height: 206px;
   display: flex;
   flex-direction: column;
@@ -122,7 +122,7 @@ ul {
 
 /* Generic Section Starts Here (common in the page) */
 .sectionContainer {
-  width: 343px;
+  width: 375px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -149,7 +149,7 @@ ul {
   gap: 20px;
 }
 .category {
-  width: 70px;
+  width: 80px;
   height: 108px;
   display: flex;
   flex-direction: column;
@@ -181,8 +181,8 @@ ul {
 .productCards {
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
-  width: 343px;
+  gap: 15px;
+  width: 375px;
 }
 .productCard {
   display: flex;
@@ -190,22 +190,23 @@ ul {
   gap: 8px;
   padding-top: 8px;
   align-items: center;
-  width: 160px;
-  height: 270px;
+  justify-content: center;
+  width: 180px;
+  height: 275px;
   box-sizing: border-box;
   border: 1px solid black;
   border: 1px solid #ebf0ff;
   border-radius: 5px;
 }
 .productImg {
-  width: 140px;
-  height: 140px;
+  width: 150px;
+  height: 150px;
 }
 .productDetails {
   display: flex;
   flex-direction: column;
   gap: 8px;
-  width: 140px;
+  width: 150px;
   font-family: Poppins;
   font-size: 0.9rem;
 }
@@ -234,7 +235,7 @@ ul {
 
 /* Recommended Banner Starts Here */
 .recommendedBanner {
-  width: 343px;
+  width: 375px;
   height: 206px;
   background-image: url("../../public/images/Products/recommendedBanner.png");
 }
