@@ -1,4 +1,4 @@
-import styles from './ProductTemp.module.css';
+import styles from './Product.module.css';
 import Header from "../components/CommonComp/Header";
 import Footer from "../components/CommonComp/Footer";
 

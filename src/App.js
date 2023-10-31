@@ -8,11 +8,11 @@ import { useEffect } from "react";
 import LandingPgCopy from "./pages/LandingPage";
 import BlogPost from "./pages/BlogPost";
 import SelfDiagnosis from './pages/SelfDiagnosis';
-import ProductPage from "./pages/ProductPage";
 import SearchDoc from "./pages/SearchDoc";
 import Products from "./pages/Products";
 import Login from "./pages/Login";
-import ProductTemp from "./pages/ProductTemp";
+import Product from "./pages/Product";
+import AddToCart from "./pages/AddToCart";
 
 function App() {
   const action = useNavigationType();
@@ -59,11 +59,11 @@ function App() {
       <Route path="/" element={<LandingPgCopy />} />
       <Route path="/blogpost" element={<BlogPost />} />
       <Route path="/diagnosis" element={<SelfDiagnosis />} />
-      <Route path="/product" element={<ProductPage />} />
       <Route path="/searchdoc" element={<SearchDoc />} />
       <Route path="/products" element={<Products />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/producttemp" element={<ProductTemp />} />
+      <Route path="/product" element={<Product />} />
+      <Route path="/addtocart" element={<AddToCart />} />
     </Routes>
   );
 }
