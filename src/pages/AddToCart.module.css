@@ -6,7 +6,9 @@
   width: 100%;
   margin-top: 30px;
   margin-bottom: 30px;
+  font-family: Mulish;
 }
+/* Cart heading starts here */
 .heading {
   font-size: 1.1rem;
   font-family: Poppins;
@@ -14,11 +16,15 @@
   margin-bottom: 10px;
   color: #223263;
 }
+/* Card Heading ends here */
+/* Horizontal line starts here */
 .horizontalLine {
   width: 375px;
   height: 2px;
   background-color: #ebf0ff;
 }
+/* Horizontal line ends here */
+/* Product cards starts here */
 .productCards {
   display: flex;
   flex-direction: column;
@@ -79,7 +85,6 @@
   justify-content: center;
   border-radius: 5px;
   box-sizing: border-box;
-  font-family: Mulish;
   font-size: 0.9rem;
   color: #909881;
 }
@@ -110,3 +115,77 @@
   align-items: center;
   font-family: Poppins;
 }
+/* Product Card ends here */
+/* Apply coupan starts here */
+.applyCoupanContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 375px;
+  height: 56px;
+}
+.applyCoupanInput {
+  border-radius: 5px 0 0 5px;
+  width: 288px;
+  height: 40px;
+  border: 1px solid #ebf0ff;
+  box-sizing: border-box;
+  color: #9098b1;
+  padding-left: 20px;
+  font-size: 0.8rem;
+}
+.applyCoupanBtn {
+  width: 87px;
+  border-radius: 0 5px 5px 0;
+  background-color: #40bfff;
+  height: 40px;
+  border: 0;
+  color: white;
+  font-family: Poppins;
+}
+/* Apply Coupan ends here */
+/* Total Price calculation starts here */
+.totalPriceCalcContainer {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ebf0ff;
+  width: 375px;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 10px;
+}
+.priceContainer,
+.totalPriceContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.priceLabel {
+  color: #9098b1;
+}
+.totalPriceContainer {
+  margin-top: 10px;
+}
+.totalPriceLabel {
+  font-family: Poppins;
+  color: #223263;
+}
+.totalPrice {
+  font-family: Poppins;
+  color: #40bfff;
+}
+/* Total Price calculation ends here */
+/* Checkout starts here */
+.checkout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: Poppins;
+  width: 375px;
+  height: 57px;
+  background-color: #40bfff;
+  border: 0;
+  border-radius: 5px;
+}
+/* Checkout ends here */

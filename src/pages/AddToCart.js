@@ -73,6 +73,41 @@ const AddToCart = () => {
                         </div>
                     </div>
                 </div>
+                <div className={styles.applyCoupanCotainer}>
+                    <input
+                        className={styles.applyCoupanInput}
+                        type="text"
+                        placeholder='Enter Coupan Code'
+                    />
+                    <button className={styles.applyCoupanBtn}>
+                        Apply
+                    </button>
+                </div>
+                <div className={styles.totalPriceCalcContainer}>
+                    <div className={styles.priceContainer}>
+                        <div className={styles.priceLabel}>Items (3)</div>
+                        <div className={styles.price}>$598.86</div>
+                    </div>
+                    <div className={styles.priceContainer}>
+                        <div className={styles.priceLabel}>Shipping</div>
+                        <div className={styles.price}>$40.00</div>
+                    </div>
+                    <div className={styles.priceContainer}>
+                        <div className={styles.priceLabel}>Import charges</div>
+                        <div className={styles.price}>$128.00</div>
+                    </div>
+                    <div className={styles.totalPriceContainer}>
+                        <div className={styles.totalPriceLabel}>
+                            Total Price
+                        </div>
+                        <div className={styles.totalPrice}>
+                            $766.86
+                        </div>
+                    </div>
+                </div>
+                <button className={styles.checkout}>
+                    Check Out
+                </button>
             </div>
             <Footer />
         </div>
