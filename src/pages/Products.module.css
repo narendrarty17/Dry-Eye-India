@@ -71,7 +71,7 @@ ul {
   padding-top: 30px;
   box-sizing: border-box;
   border-radius: 5px;
-  background-image: url("../../public/images/Products/promotionImg.png");
+  background-image: url("../../public/images/Products/promotionImg.jpeg");
 }
 .flashImgRecommend {
   background-image: url("../../public/images/Products/recommendedBanner.png");
@@ -149,8 +149,7 @@ ul {
   gap: 20px;
 }
 .category {
-  width: 80px;
-  height: 108px;
+  width: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -160,14 +159,11 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 1px solid #ebf0ff;
 }
 .categoryIcon {
-  width: 28px;
-  height: 28px;
+  width: 105px;
+  height: 70px;
+  border-radius: 5px;
 }
 .categoryName {
   font-size: 0.9rem;

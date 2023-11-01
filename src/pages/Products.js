@@ -2,7 +2,167 @@ import styles from './Products.module.css';
 import Header from "../components/CommonComp/Header";
 import Footer from "../components/CommonComp/Footer";
 
+const products = [
+    {
+        id: 0,
+        name: 'Moisture Chamber Goggles',
+        price: 2000,
+        previousPrice: 4000,
+        discount: 50,
+        imgURL: 'images/Products/productImgs/01_Moisture_Chamber_Goggles.jpg'
+    },
+    {
+        id: 1,
+        name: 'Manuka Honey Gel',
+        price: 2000,
+        previousPrice: 3000,
+        discount: 33,
+        imgURL: 'images/Products/productImgs/02_Manuka_Honey_Gel.jpg'
+    },
+    {
+        id: 2,
+        name: 'Manuka Honey Drops',
+        price: 1000,
+        previousPrice: 1500,
+        discount: 33,
+        imgURL: 'images/Products/productImgs/03_Manuka_Honey_Drops.jpg'
+    },
+    {
+        id: 3,
+        name: 'Omega 3 Capsules',
+        price: 500,
+        previousPrice: 1000,
+        discount: 50,
+        imgURL: 'images/Products/productImgs/04_Omega_3.jpg'
+    },
+    {
+        id: 4,
+        name: 'Anxiety Supplement',
+        price: 800,
+        previousPrice: 1000,
+        discount: 20,
+        imgURL: 'images/Products/productImgs/05_Anxiety_Supplement.jpg'
+    },
+    {
+        id: 5,
+        name: 'Lactoferrin',
+        price: 600,
+        previousPrice: 1000,
+        discount: 40,
+        imgURL: 'images/Products/productImgs/06_Lactoferrin.jpg'
+    },
+    {
+        id: 6,
+        name: 'Eyelid Cleanser',
+        price: 600,
+        previousPrice: 1000,
+        discount: 40,
+        imgURL: 'images/Products/productImgs/07_Eyelid_Cleanser.jpg'
+    },
+    {
+        id: 7,
+        name: 'Rosewater',
+        price: 200,
+        previousPrice: 100,
+        discount: 50,
+        imgURL: 'images/Products/productImgs/08_Rosewater.jpg'
+    }
+]
+
+const recProducts = [
+    {
+        id: 0,
+        name: 'Moisture Chamber Goggles',
+        price: 2000,
+        previousPrice: 4000,
+        discount: 50,
+        imgURL: 'images/Products/productImgs/01_Moisture_Chamber_Goggles.jpg'
+    },
+    {
+        id: 1,
+        name: 'Manuka Honey Gel',
+        price: 2000,
+        previousPrice: 3000,
+        discount: 33,
+        imgURL: 'images/Products/productImgs/02_Manuka_Honey_Gel.jpg'
+    }
+]
+const categories = [
+    {
+        id: 0,
+        name: 'Accessories',
+        imgURL: 'images/Products/categoryIcons/01_Eye_Accessories.jpg'
+    },
+    {
+        id: 1,
+        name: 'Drops/Ointment',
+        imgURL: 'images/Products/categoryIcons/02_Eye_Drops_Ointment.jpg'
+    },
+    {
+        id: 2,
+        name: 'Supplements',
+        imgURL: 'images/Products/categoryIcons/03_Eye_Supplements.jpg'
+    }
+];
+
 const Products = () => {
+    const productList = products.map((product) => {
+        return (
+            <div className={styles.productCard}>
+                <img
+                    className={styles.productImg}
+                    src={product.imgURL}
+                />
+                <div className={styles.productDetails}>
+                    <div className={styles.productName}>
+                        <b>{product.name}</b>
+                    </div>
+                    <div className={styles.productPrice}>
+                        INR {product.price}
+                    </div>
+                    <div className={styles.productDiscountContainer}>
+                        <div className={styles.previousPrice}>INR {product.previousPrice}</div>
+                        <div className={styles.productDiscount}>{product.discount}% off</div>
+                    </div>
+                </div>
+            </div>
+        );
+    })
+    const recProductList = recProducts.map((product) => {
+        return (
+            <div className={styles.productCard}>
+                <img
+                    className={styles.productImg}
+                    src={product.imgURL}
+                />
+                <div className={styles.productDetails}>
+                    <div className={styles.productName}>
+                        <b>{product.name}</b>
+                    </div>
+                    <div className={styles.productPrice}>
+                        INR {product.price}
+                    </div>
+                    <div className={styles.productDiscountContainer}>
+                        <div className={styles.previousPrice}>INR {product.previousPrice}</div>
+                        <div className={styles.productDiscount}>{product.discount}% off</div>
+                    </div>
+                </div>
+            </div>
+        );
+    })
+    const categoryList = categories.map((category) => {
+        return (
+            <div className={styles.category}>
+                <div className={styles.categoryIconContainer}>
+                    <img
+                        className={styles.categoryIcon}
+                        src={category.imgURL}
+                    />
+                </div>
+                <div className={styles.categoryName}>{category.name}</div>
+            </div>
+        );
+    });
     return (
         <div>
             <Header />
@@ -54,122 +214,16 @@ const Products = () => {
                         <h4 className={styles.sectionRightHeading}>More Category</h4>
                     </div>
                     <div className={styles.categories}>
-                        <div className={styles.category}>
-                            <div className={styles.categoryIconContainer}>
-                                <img
-                                    className={styles.categoryIcon}
-                                    src="images/Products/categoryIcons/shirt.svg"
-                                />
-                            </div>
-                            <div className={styles.categoryName}>Shirt</div>
-                        </div>
-                        <div className={styles.category}>
-                            <div className={styles.categoryIconContainer}>
-                                <img
-                                    className={styles.categoryIcon}
-                                    src="images/Products/categoryIcons/dress.svg"
-                                />
-                            </div>
-                            <div className={styles.categoryName}>Dress</div>
-                        </div>
-                        <div className={styles.category}>
-                            <div className={styles.categoryIconContainer}>
-                                <img
-                                    className={styles.categoryIcon}
-                                    src="images/Products/categoryIcons/manBag.svg"
-                                />
-                            </div>
-                            <div className={styles.categoryName}>Man Bag</div>
-                        </div>
-                        <div className={styles.category}>
-                            <div className={styles.categoryIconContainer}>
-                                <img
-                                    className={styles.categoryIcon}
-                                    src="images/Products/categoryIcons/womanBag.svg"
-                                />
-                            </div>
-                            <div className={styles.categoryName}>Bag</div>
-                        </div>
+                        {categoryList}
                     </div>
                 </div>
                 <div className={styles.sectionContainer}>
                     <div className={styles.sectionHeader}>
-                        <h4 className={styles.sectionLeftHeading}>Flash Sale</h4>
+                        <h4 className={styles.sectionLeftHeading}>Our Products</h4>
                         <h4 className={styles.sectionRightHeading}>See More</h4>
                     </div>
                     <div className={styles.productCards}>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/bag.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>FS-Nike Air Max 270</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
+                        {productList}
                     </div>
                 </div>
                 <div className={styles.flashCardContainer}>
@@ -185,78 +239,7 @@ const Products = () => {
                 </div>
                 <div className={styles.sectionContainer}>
                     <div className={styles.productCards}>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/bag.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>FS-Nike Air Max 270</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className={styles.productCard}>
-                            <img
-                                className={styles.productImg}
-                                src="images/Products/productImgs/wallet.png"
-                            />
-                            <div className={styles.productDetails}>
-                                <div className={styles.productName}>
-                                    <b>MS-Nike Air Pro ultra max...</b>
-                                </div>
-                                <div className={styles.productPrice}>
-                                    $299.43
-                                </div>
-                                <div className={styles.productDiscountContainer}>
-                                    <div className={styles.previousPrice}>$534</div>
-                                    <div className={styles.productDiscount}>24% off</div>
-                                </div>
-                            </div>
-                        </div>
+                        {recProductList}
                     </div>
                 </div>
             </div>
