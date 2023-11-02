@@ -1,5 +1,5 @@
 import styles from './Product.module.css';
-import { products } from './ProductsData';
+import { products, recProducts } from './ProductsData';
 
 const RatingRenderer = ({ numberOfTimes }) => {
     const ratingIconSrcFilled = 'images/Products/Product/star.svg';
@@ -54,6 +54,32 @@ const CustomerReviews = ({ reviews }) => {
 }
 
 const Product = ({ id }) => {
+    const recommendedProducts = recProducts.map((product) => {
+        return (
+            <div className={styles.productCard}>
+                <div className={styles.productDetails}>
+                    <img
+                        className={styles.suggestedProductImg}
+                        src={product.imgURL}
+                    />
+                    <div className={styles.suggestedProductName}>
+                        {product.name}
+                    </div>
+                    <div className={styles.productPrice}>
+                        INR {product.price}
+                    </div>
+                    <div className={styles.productDiscount}>
+                        <div className={styles.productPreviousPrice}>
+                            INR {product.previousPrice}
+                        </div>
+                        <div className={styles.productDiscountPercentage}>
+                            {product.discount}% off
+                        </div>
+                    </div>
+                </div>
+            </div>
+        );
+    });
     const item = products.find((product) => {
         return parseInt(product.id) == parseInt(id);
     });
@@ -179,50 +205,7 @@ const Product = ({ id }) => {
             <div className={styles.suggestedProductsContainer}>
                 <div className={styles.headingName}>You Might Also Like</div>
                 <div className={styles.productCards}>
-                    <div className={styles.productCard}>
-                        <div className={styles.productDetails}>
-                            <img
-                                className={styles.suggestedProductImg}
-                                src="images/Products/Product/suggestedProducts/product01.png"
-                            />
-                            <div className={styles.suggestedProductName}>
-                                Nike Shoes
-                            </div>
-                            <div className={styles.productPrice}>
-                                $299.43
-                            </div>
-                            <div className={styles.productDiscount}>
-                                <div className={styles.productPreviousPrice}>
-                                    $534.33
-                                </div>
-                                <div className={styles.productDiscountPercentage}>
-                                    24% off
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div className={styles.productCard}>
-                        <div className={styles.productDetails}>
-                            <img
-                                className={styles.suggestedProductImg}
-                                src="images/Products/Product/suggestedProducts/product01.png"
-                            />
-                            <div className={styles.suggestedProductName}>
-                                Nike Shoes
-                            </div>
-                            <div className={styles.productPrice}>
-                                $299.43
-                            </div>
-                            <div className={styles.productDiscount}>
-                                <div className={styles.productPreviousPrice}>
-                                    $534.33
-                                </div>
-                                <div className={styles.productDiscountPercentage}>
-                                    24% off
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    {recommendedProducts}
                 </div>
             </div>
             <button className={styles.addToCart}>
