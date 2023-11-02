@@ -28,9 +28,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 9, 2016'
             },
@@ -40,9 +40,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -76,9 +76,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -88,9 +88,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -124,9 +124,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -136,9 +136,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -172,9 +172,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -184,9 +184,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -220,9 +220,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -232,9 +232,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -268,9 +268,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -280,9 +280,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -316,9 +316,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -328,9 +328,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -364,9 +364,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -376,9 +376,9 @@ export const products = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -415,9 +415,9 @@ export const recProducts = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -427,9 +427,9 @@ export const recProducts = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }
@@ -463,9 +463,9 @@ export const recProducts = [
                 custImgURL: 'images/Products/customerImgs/ankur.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             },
@@ -475,9 +475,9 @@ export const recProducts = [
                 custImgURL: 'images/Products/customerImgs/neha.jpg',
                 rating: 4,
                 reviewImgs: [
-                    "images/Products/Product/reviewImgs/reviewImg01.png",
-                    "images/Products/Product/reviewImgs/reviewImg02.png",
-                    "images/Products/Product/reviewImgs/reviewImg03.png"
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg01.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg02.jpg",
+                    "images/Products/productImgs/reviewImgs/manuka_gel/reviewImg03.jpg"
                 ],
                 reviewDate: 'December 10, 2016'
             }

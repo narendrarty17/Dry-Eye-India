@@ -23,7 +23,7 @@ const RatingRenderer = ({ numberOfTimes }) => {
 
 const CustomerReviews = ({ reviews }) => {
     const customerReviews = reviews.map((review) => {
-        const imgs = review.reviewImgs.map(imgURL => <img src={imgURL} />);
+        const imgs = review.reviewImgs.map(imgURL => <img className={styles.reviewImg} src={imgURL} />);
         return (
             <div className={styles.customerReview}>
                 <div className={styles.customerDetails}>
