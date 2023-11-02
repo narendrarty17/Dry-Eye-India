@@ -11,7 +11,7 @@ import SelfDiagnosis from './pages/SelfDiagnosis';
 import SearchDoc from "./pages/SearchDoc";
 import Products from "./pages/Products";
 import Login from "./pages/Login";
-import Product from "./pages/Product";
+import Product from "./components/Products/Product";
 import AddToCart from "./pages/AddToCart";
 
 function App() {

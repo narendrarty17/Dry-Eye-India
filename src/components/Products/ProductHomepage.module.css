@@ -1,0 +1,237 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+ul {
+  margin: 0;
+}
+.container {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  letter-spacing: 0.5px;
+  font-family: Mulish;
+}
+
+/* topbar(includes searchbar and side icons) starts here */
+.topbar {
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  width: 375px;
+  height: 46px;
+}
+.searchbar {
+  width: 275px;
+  height: 46px;
+  position: relative;
+}
+.searchIcon {
+  position: absolute;
+  top: 13px;
+  left: 10px;
+  width: 18px;
+}
+.searchinput {
+  width: 275px;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #ebf0ff;
+}
+.searchinput::placeholder {
+  text-align: left;
+  padding-left: 35px;
+  font-size: 0.8rem;
+  color: #9098b1;
+  line-height: 150%;
+}
+.topbarSideIcon {
+  width: 25px;
+}
+/* topbar ends here */
+
+/* flash images sections starts here */
+.flashCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flashImgPromotion,
+.flashImgRecommend {
+  width: 375px;
+  height: 206px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  background-image: url("../../../public/images/Products/promotionImg.jpeg");
+}
+.flashImgRecommend {
+  background-image: url("../../../public/images/Products/recommendedBanner.png");
+}
+.flashImgHeaderTxt {
+  font-family: Poppins;
+  color: white;
+  line-height: 150%;
+}
+.flashImgTxt {
+  color: white;
+  font-size: 0.9rem;
+}
+.flashImgCountDown {
+  display: flex;
+  gap: 10px;
+  font-family: Poppins;
+}
+.flashImgCountDownBox {
+  width: 42px;
+  height: 41px;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Slider button inside flash img starts here */
+.sliderIcons {
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  width: 100px;
+}
+.sliderIcon,
+.sliderIconSelected {
+  width: 20px;
+  color: #ebf0ff;
+}
+.sliderIconSelected {
+  color: #40bfff;
+}
+.sliderIcons li::marker {
+  font-size: 25px;
+}
+/* Slider button inside flash img ends here */
+/* flash images sections starts here */
+
+/* Generic Section Starts Here (common in the page) */
+.sectionContainer {
+  width: 375px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-family: Poppins;
+}
+.sectionLeftHeading,
+.sectionRightHeading {
+  margin: 0;
+}
+.sectionRightHeading {
+  color: #40bfff;
+}
+/* Generic Section Starts Here (common in the page) */
+
+/* Category starts here */
+.categories {
+  display: flex;
+  gap: 20px;
+}
+.category {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.categoryIconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.categoryIcon {
+  width: 105px;
+  height: 70px;
+  border-radius: 5px;
+}
+.categoryName {
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  color: #909881;
+}
+/* Category ends here */
+
+/* Product Card starts here */
+.productCards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  width: 375px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  align-items: center;
+  justify-content: center;
+  width: 180px;
+  height: 275px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border: 1px solid #ebf0ff;
+  border-radius: 5px;
+}
+.productImg {
+  width: 150px;
+  height: 150px;
+}
+.productDetails {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 150px;
+  font-family: Poppins;
+  font-size: 0.9rem;
+}
+.productName {
+  line-height: 140%;
+}
+.productPrice {
+  font-weight: 600;
+  color: #40bfff;
+}
+.productDiscountContainer {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.previousPrice {
+  color: #9098b1;
+  text-decoration: line-through;
+  font-family: Mulish;
+}
+.productDiscount {
+  font-weight: 600;
+  color: #fb7181;
+}
+/* Product Card ends here */
+
+/* Recommended Banner Starts Here */
+.recommendedBanner {
+  width: 375px;
+  height: 206px;
+  background-image: url("../../../public/images/Products/promotionImg.jpeg");
+}

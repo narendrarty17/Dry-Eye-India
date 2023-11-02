@@ -1,0 +1,275 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  letter-spacing: 0.5px;
+  font-family: Mulish;
+  margin-bottom: 30px;
+}
+/* Topbar starts here */
+.topBar {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 10px;
+}
+.productName {
+  width: 250px;
+  font-family: Poppins;
+  color: #223263;
+}
+.placeHolder {
+  flex: 1;
+}
+/* Topbar ends here */
+
+/* Product Img starts here */
+.productImgContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.productImg {
+  width: 300px;
+  background-color: greenyellow;
+}
+.slider {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  height: 25px;
+}
+.slidingIcon,
+.slidingIconSelected {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ebf0ff;
+}
+.slidingIconSelected {
+  background-color: #40bfff;
+}
+/* Product Img ends here */
+
+/* Product Detail starts here */
+.productDetailContainer {
+  width: 375px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.productDetail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.productPrice {
+  margin-top: 5px;
+  font-family: Poppins;
+  color: #40bfff;
+}
+
+/* Product size starts here */
+.productSizeContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 375px;
+}
+.headingName {
+  font-weight: 600px;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #223263;
+}
+.productSizes {
+  display: flex;
+  gap: 20px;
+}
+.productSize {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #40bfff;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-weight: 600;
+}
+/* Product size ends here */
+/* Product color starts here */
+.productColorContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: flex-start;
+  width: 375px;
+}
+.headingName {
+  font-weight: 600px;
+  font-family: Poppins;
+  font-size: 1rem;
+  color: #223263;
+}
+.productColors {
+  display: flex;
+  gap: 20px;
+}
+.productColor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: blue;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  letter-spacing: 0.5px;
+  line-height: 150%;
+  font-weight: 600;
+}
+/* Product color ends here */
+/* Product Specification */
+.specificationContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 375px;
+}
+.specification {
+  display: flex;
+  justify-content: space-between;
+}
+.specificationContent {
+  color: #909881;
+  font-size: 0.9rem;
+}
+.specificationDescParagraph {
+  color: #909881;
+  font-size: 0.9rem;
+}
+/* Product Specification */
+/* Product Review starts here */
+.reviewContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 375px;
+}
+.productOverallRating {
+  display: flex;
+}
+.ratingInText {
+  color: #909881;
+  display: inline;
+  margin-left: 10px;
+  font-size: 0.9rem;
+}
+.customerReview {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 5px;
+}
+.customerDetails {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.customerImg {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+.customerNameAndRating {
+  display: flex;
+  flex-direction: column;
+}
+.reviewTxt {
+  color: #909881;
+  font-size: 0.9rem;
+}
+.reviewImgs {
+  display: flex;
+  gap: 10px;
+}
+.reviewDate {
+  font-size: 0.8rem;
+  color: #909881;
+}
+/* Product Review ends here */
+/* You might also like starts here */
+.suggestedProductsContainer {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  gap: 10px;
+}
+.productCards {
+  display: flex;
+  gap: 20px;
+}
+.productCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: Poppins;
+  border: 1px solid #ebf0ff;
+  width: 175px;
+  height: 250px;
+}
+.suggestedProductImg {
+  width: 150px;
+  height: 150px;
+}
+.suggestedProductName {
+  color: #223263;
+}
+.productPrice {
+  color: #40bfff;
+}
+.productDiscount {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.productPreviousPrice {
+  font-family: Mulish;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  color: #909881;
+}
+.productDiscountPercentage {
+  color: #fb7181;
+}
+.addToCart {
+  width: 375px;
+  height: 57px;
+  background-color: #40bfff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Poppins;
+  font-size: 1.1rem;
+  border: 0;
+  border-radius: 5px;
+}
+/* You might also like ends here */
+@media (min-width: 600px) {
+  .container {
+    width: 100%;
+  }
+  .productImg {
+    width: 300px;
+  }
+  .topBar {
+    width: 375px;
+  }
+}
